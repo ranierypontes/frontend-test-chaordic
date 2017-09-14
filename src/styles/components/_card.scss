@@ -1,0 +1,21 @@
+// Card
+.card {
+
+  &.-is-release {
+    text-align: center;
+    background-color: $white;
+    border: 1px solid $black;
+
+    .card-content {
+      padding: rem(100 0);
+    }
+
+    .title {
+      color: $black;
+      font-size: rem(18);
+      letter-spacing: rem(2);
+      text-transform: uppercase;
+    }
+  }
+
+}

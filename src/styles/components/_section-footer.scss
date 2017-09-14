@@ -1,0 +1,45 @@
+////////////////////////////
+////// SECTION FOOTER //////
+////////////////////////////
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGE SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+.section-footer{
+  /* Default Large Screens */
+  margin-top: rem(60);
+  text-align: center;
+
+  /* Variations Large Screens */
+  // .-othersection
+  &.-othersection{ text-transform: none; }
+
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (min-width: 601px) and (max-width: 992px){
+
+  .section-footer{
+    /* Default Medium Screens */
+    margin-top: rem(40);
+
+    /* Variations Medium Screens */
+    // .-othersection
+    &.-othersection{ text-transform: uppercase; }
+
+  }
+
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (max-width: 600px){
+
+  .section-footer{
+    /* Default Medium Screens */
+    margin-top: rem(40);
+
+    /* Variations Medium Screens */
+    // .-othersection
+    &.-othersection{ text-transform: none; }
+
+  }
+
+}

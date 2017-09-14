@@ -1,0 +1,80 @@
+////////////////////////////
+////// SECTION HEADER //////
+////////////////////////////
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGE SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+
+.section-header{
+
+  /* Default Large Screens */
+  > .title{
+    font-size: rem(45);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  > .subtitle{
+    margin-top: rem(20);
+    font-size: rem(35);
+    font-weight: normal;
+    text-align: center;
+  }
+
+  > .divider{
+    @extend .divider;
+    margin: rem(20 250) !important;
+  }
+
+  /* Variations Large Screens */
+  // .-intro
+  > .title.-intro{ font-size: rem(90); padding-top: rem(20); }
+  > .subtitle.-intro{ padding-bottom: rem(20); }
+  > .divider.-intro{ box-shadow: 4px 5px 15px $black; }
+
+  // .-othersection
+  > .title.-othersection{ text-transform: none; }
+
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (min-width: 601px) and (max-width: 992px){
+
+  .section-header{
+
+    /* Default Medium Screens */
+    > .title{ font-size: rem(35); }
+    > .subtitle{ margin-top: rem(15); font-size: rem(25); }
+    > .divider{ margin: rem(15 85) !important; }
+
+    /* Variations Medium Screens */
+    // .-intro
+    > .title.-intro{ font-size: rem(80); padding-top: rem(10); }
+    > .subtitle.-intro{ padding-bottom: rem(10); }
+    > .divider.-intro{ margin: rem(15 65) !important; }
+
+    // .-othersection
+    > .title.-othersection{ text-transform: lowercase; }
+
+  }
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (max-width: 600px){
+  .section-header{
+
+    /* Default Small Screens */
+    > .title{ font-size: rem(30); }
+    > .subtitle{ margin-top: rem(10); font-size: rem(20); }
+    > .divider{ margin: rem(15 40) !important; }
+
+    /* Variations Small Screens */
+    // .-intro
+    > .title.-intro{ font-size: rem(50); padding-top: rem(5); }
+    > .subtitle.-intro{ font-size: rem(25); padding-bottom: rem(5); }
+    > .divider.-intro{ margin: rem(15 25) !important; }
+
+    // .-othersection
+    > .title.-othersection{ text-transform: none; }
+
+  }
+}

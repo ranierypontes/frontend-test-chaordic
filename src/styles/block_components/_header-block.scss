@@ -1,0 +1,48 @@
+///////////////////////////
+////// Header Block //////
+//////////////////// /////
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (SMALL SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+.header{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1499;
+  width: 100%;
+  height: rem(70);
+  color: $white;
+  background-color: $primary;
+  box-shadow: 0px 2px 5px lighten($black, 10%);
+
+  .brand-logo {
+    width: rem(120);
+    line-height: rem(70);
+    float: left;
+
+    .logo{
+      color: $white;
+      width: 100%;
+    }
+
+  }
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ LARGER SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (min-width: 993px){
+  .header{
+    height: rem(80);
+
+    .brand-logo{
+      width: rem(180);
+      line-height: rem(80);
+      float: left;
+
+      .logo{
+        color: $white;
+        width: 100%;
+      }
+
+    }
+  }
+}

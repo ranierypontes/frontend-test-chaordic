@@ -1,0 +1,57 @@
+///////////////////////////
+////// SECTION BLOCK //////
+///////////////////////////
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGER SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+.section{
+  /* Default Larger Screens */
+  width: 100%;
+  height: auto;
+  padding: rem(90 0);
+  color: lighten($black, 20%);
+  background-color: white;
+
+  /* Variations Larger Screens */
+  // .-intro
+  &.-intro{ padding: rem(120 0); overflow: hidden; background-color: darken($white, 5%); }
+
+  // .-othersection
+  &.-othersection{ color: $white; background-color: $primary; }
+
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (min-width: 601px) and (max-width: 992px){
+
+  .section{
+    /* Default Medium Screens */
+    padding: rem(70 0);
+
+    /* Variations Medium Screens */
+    // .-intro
+    &.-intro{ padding: rem(110 0); }
+
+    // .-othersection
+    &.-othersection{ padding: rem(70 0); }
+
+  }
+
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (max-width: 600px){
+
+  .section{
+    /* Default Small Screens */
+    padding: rem(60 0);
+
+    /* Variations Small Screens */
+    // .-intro
+    &.-intro{ padding: rem(105 0); }
+
+    // .-othersection
+    &.-othersection{ padding: rem(60 0); }
+
+  }
+
+}

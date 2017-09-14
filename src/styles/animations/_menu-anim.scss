@@ -1,0 +1,94 @@
+//////////////////////////////
+////// MENU ANIMATIONS ///////
+//////////////////// /////////
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (min-width: 601px) and(max-width: 992px){
+
+  // Component header-menu.scss
+  .header-menu {
+
+    /* Menu open */
+    &.-open{
+      width: 40%;
+      -webkit-animation: fadeIn 0.5s;
+      animation: fadeIn 0.5s;
+    }
+
+    /* Menu close */
+    &.-close{
+      width: 0%;
+      -webkit-animation: fadeOut 0.3s;
+      animation: fadeOut 0.3s;
+    }
+  }
+
+  /* Animations */
+  // In
+  @-webkit-keyframes fadeIn{
+    from{ opacity: 0; width: 4%; }
+    to{ opacity: 1; width: 40%; }
+  }
+  @keyframes fadeIn{
+    from{ opacity: 0; width: 4%; }
+    to{ opacity: 1; width: 40%; }
+  }
+
+  // Out
+  @-webkit-keyframes fadeOut{
+    from{ opacity: 1; width: 40%; }
+    to{ opacity: 0; width: 2%; }
+  }
+  @keyframes fadeOut{
+    from{ opacity: 1; width: 40%; }
+    to{ opacity: 0; width: 2%; }
+  }
+
+}
+
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (max-width: 600px){
+
+  // Component header-menu.scss
+  .header-menu {
+
+    // Menu open
+    &.-open{
+      width: 100%;
+      -webkit-animation: fadeIn 0.5s;
+      animation: fadeIn 0.5s;
+    }
+
+    // Menu close
+    &.-close{
+      width: 0%;
+      -webkit-animation: fadeOut 0.3s;
+      animation: fadeOut 0.3s;
+    }
+
+  }
+
+  /* Animations */
+  // In
+  @-webkit-keyframes fadeIn{
+    from{ opacity: 0; width: 40%; }
+    to{ opacity: 1; width: 100%; }
+  }
+  @keyframes fadeIn{
+    from{ opacity: 0; width: 40%; }
+    to{ opacity: 1; width: 100%; }
+  }
+
+  // Out
+  @-webkit-keyframes fadeOut{
+    from{ opacity: 1; width: 100%; }
+    to{ opacity: 0; width: 20%; }
+  }
+  @keyframes fadeOut{
+    from{ opacity: 1; width: 100%; }
+    to{ opacity: 0; width: 20%; }
+  }
+
+}
+

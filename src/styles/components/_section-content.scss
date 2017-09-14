@@ -1,0 +1,68 @@
+/////////////////////////////
+////// SECTION CONTENT //////
+//////////////////// ////////
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGE SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+
+.section-content{
+
+  /* Default Large Screens */
+  margin-top: rem(40);
+
+  .title{
+    margin-top: rem(40);
+    font-size: rem(25);
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .paragraph{
+    margin-bottom: rem(5);
+    font-size: rem(16);
+    text-align: left;
+  }
+
+  .divider{
+    @extend .divider;
+    margin: rem(10 0) !important;
+  }
+
+  /* Variations Large Screens */
+  // .-othersection
+  .title.-othersection{ color: $secondary; }
+
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (min-width: 601px) and (max-width: 992px){
+
+  .section-content{
+    /* Default Medium Screens */
+    margin-top: rem(30);
+
+    .title{ font-size: rem(20); }
+
+    /* Variations Medium Screens */
+    // .-othersection
+    .title.-othersection{ color: $white; text-transform: uppercase; }
+    .paragraph.-othersection{ color: $secondary; }
+
+  }
+}
+
+/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+@media (max-width: 600px){
+
+  .section-content{
+    /* Default Small Screens */
+    margin-top: rem(20);
+
+    .title{ font-size: rem(20); }
+
+    /* Variations Small Screens */
+    // .-othersection
+    .title.-othersection{ text-transform: none; }
+
+  }
+}
+
