@@ -2,12 +2,17 @@
 ////// BODY /////////
 /////////////////////
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGER SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-.body { margin-top: rem(80); }
+// Default
+.body {
+  margin-top: rem(70);
+}
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (max-width: 992px){
+/* Called in _media-queries.scss */
+// Desktops screens
+@mixin body--lg(){
 
-  .body { margin-top: rem(70); }
+  .body{
+    margin-top: rem(80);
+  }
 
 }

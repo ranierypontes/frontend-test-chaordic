@@ -13,7 +13,7 @@
 
   /* Variations Larger Screens */
   // .-intro
-  &.-intro{ padding: rem(120 0); overflow: hidden; background-color: darken($white, 5%); }
+  &.-intro{ padding: rem(120 0); overflow: hidden; color: $black; background-color: darken($white, 5%); }
 
   // .-othersection
   &.-othersection{ color: $white; background-color: $primary; }

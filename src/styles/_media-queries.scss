@@ -1,0 +1,46 @@
+/**
+* MEDIA QUERIES
+*/
+
+/*********************************** BREAKPOINTS ***********************************/
+
+// Extra small devices (phones, until 575px)
+$PHONES : 'max-width: 575px';
+// Small devices (landscape phones, 576px and up)
+$LARGE_PHONES : 'min-width: 576px';
+// Medium devices (tablets, 768px and up)
+$TABLETS : 'min-width: 768px';
+// Large devices (desktops, 992px and up)
+$DESKTOPS : 'min-width: 992px';
+// Extra large devices (large desktops, 1200px and up)
+$LARGE_DESKTOPS : 'min-width: 1200px';
+
+
+/***************************** COMPONENTS MEDIA QUERIES *****************************/
+
+// Extra small screen size (xs)
+@media only screen and ($PHONES) {}
+
+// Small screen size (sm)
+@media only screen and ($LARGE_PHONES) {
+  @include menu-anim--sm;
+}
+
+// Medium screen size (md)
+@media only screen and ($TABLETS) {
+  @include menu-toggle--md;
+
+}
+
+// Large screen size (lg)
+@media only screen and ($DESKTOPS) {
+  @include body--lg;
+  @include header--lg;
+  @include header-menu--lg;
+  @include menu-toggle--lg;
+  @include menu-anim--lg;
+
+}
+
+// Extra large screen size (xl)
+@media only screen and ($LARGE_DESKTOPS) {}

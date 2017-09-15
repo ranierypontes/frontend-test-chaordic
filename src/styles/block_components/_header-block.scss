@@ -1,8 +1,8 @@
-///////////////////////////
-////// Header Block //////
-//////////////////// /////
+/**
+* HEADER BLOCK
+*/
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (SMALL SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+//////////////////////////// Default Mobile First \\\\\\\\\\\\\\\\\\\\\\\\\
 .header{
   display: block;
   position: fixed;
@@ -28,21 +28,18 @@
   }
 }
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ LARGER SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (min-width: 993px){
+/************************** Mixins called in media-queries.scss **************************/
+
+/////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@mixin header--lg() {
+
   .header{
     height: rem(80);
 
     .brand-logo{
       width: rem(180);
       line-height: rem(80);
-      float: left;
-
-      .logo{
-        color: $white;
-        width: 100%;
-      }
-
     }
+
   }
 }

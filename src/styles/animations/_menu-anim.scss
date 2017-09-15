@@ -1,94 +1,97 @@
-//////////////////////////////
-////// MENU ANIMATIONS ///////
-//////////////////// /////////
+/**
+* MENU ANIMATIONS
+*/
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (min-width: 601px) and(max-width: 992px){
+//////////////////////////// Default Mobile First \\\\\\\\\\\\\\\\\\\\\\\\\
+// Component header-menu.scss
+.header-menu {
 
-  // Component header-menu.scss
+  // Class menu open
+  &.-open{
+    width: 100%;
+    -webkit-animation: menuOpen 0.5s;
+    animation: menuOpen 0.5s;
+  }
+
+  // Class menu close
+  &.-close{
+    width: 0%;
+    -webkit-animation: menuClose 0.3s;
+    animation: menuClose 0.3s;
+  }
+
+}
+
+// Animation menu open
+@-webkit-keyframes menuOpen{
+  from{ opacity: 0; width: 40%; }
+  to{ opacity: 1; width: 100%; }
+}
+@keyframes menuOpen{
+  from{ opacity: 0; width: 40%; }
+  to{ opacity: 1; width: 100%; }
+}
+
+// Animation menu close
+@-webkit-keyframes menuClose{
+  from{ opacity: 1; width: 100%; }
+  to{ opacity: 0; width: 20%; }
+}
+@keyframes menuClose{
+  from{ opacity: 1; width: 100%; }
+  to{ opacity: 0; width: 20%; }
+}
+
+/************************** Mixins called in media-queries.scss **************************/
+
+/////////////////////////////// Small Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@mixin menu-anim--sm(){
+
   .header-menu {
-
-    /* Menu open */
     &.-open{
-      width: 40%;
-      -webkit-animation: fadeIn 0.5s;
-      animation: fadeIn 0.5s;
+      width: 45%;
+      -webkit-animation: menuOpen 0.5s;
+      animation: menuOpen 0.5s;
     }
 
-    /* Menu close */
     &.-close{
       width: 0%;
-      -webkit-animation: fadeOut 0.3s;
-      animation: fadeOut 0.3s;
+      -webkit-animation: menuClose 0.3s;
+      animation: menuClose 0.3s;
     }
   }
 
-  /* Animations */
-  // In
-  @-webkit-keyframes fadeIn{
+  @-webkit-keyframes menuOpen{
     from{ opacity: 0; width: 4%; }
-    to{ opacity: 1; width: 40%; }
+    to{ opacity: 1; width: 45%; }
   }
-  @keyframes fadeIn{
+  @keyframes menuOpen{
     from{ opacity: 0; width: 4%; }
-    to{ opacity: 1; width: 40%; }
+    to{ opacity: 1; width: 45%; }
   }
 
-  // Out
-  @-webkit-keyframes fadeOut{
-    from{ opacity: 1; width: 40%; }
+  @-webkit-keyframes menuClose{
+    from{ opacity: 1; width: 45%; }
     to{ opacity: 0; width: 2%; }
   }
-  @keyframes fadeOut{
-    from{ opacity: 1; width: 40%; }
+  @keyframes menuClose{
+    from{ opacity: 1; width: 45%; }
     to{ opacity: 0; width: 2%; }
   }
 
 }
 
+/////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@mixin menu-anim--lg(){
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (max-width: 600px){
-
-  // Component header-menu.scss
   .header-menu {
-
-    // Menu open
     &.-open{
-      width: 100%;
-      -webkit-animation: fadeIn 0.5s;
-      animation: fadeIn 0.5s;
+      width: auto;
     }
 
-    // Menu close
     &.-close{
-      width: 0%;
-      -webkit-animation: fadeOut 0.3s;
-      animation: fadeOut 0.3s;
+      width: auto;
     }
-
-  }
-
-  /* Animations */
-  // In
-  @-webkit-keyframes fadeIn{
-    from{ opacity: 0; width: 40%; }
-    to{ opacity: 1; width: 100%; }
-  }
-  @keyframes fadeIn{
-    from{ opacity: 0; width: 40%; }
-    to{ opacity: 1; width: 100%; }
-  }
-
-  // Out
-  @-webkit-keyframes fadeOut{
-    from{ opacity: 1; width: 100%; }
-    to{ opacity: 0; width: 20%; }
-  }
-  @keyframes fadeOut{
-    from{ opacity: 1; width: 100%; }
-    to{ opacity: 0; width: 20%; }
   }
 
 }
-

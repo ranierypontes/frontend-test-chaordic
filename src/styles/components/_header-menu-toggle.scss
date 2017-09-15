@@ -1,15 +1,14 @@
-///////////////////////////////
-////// HEADER MENU TOGLE //////
-//////////////////// //////////
+/**
+* HEADER MENU TOGGLE
+*/
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGE SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+//////////////////////////// Default Mobile First \\\\\\\\\\\\\\\\\\\\\\\\\
 .menu-toggle {
-  z-index: 2000;
-  margin-top: rem(25);
-  right: rem(120);
   position: absolute;
+  top: rem(23);
+  right: rem(15);
   width: rem(22);
-  height: rem(30);
+  height: rem(22);
 
   .check {
     position: absolute;
@@ -57,16 +56,14 @@
   }
 }
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (min-width: 761px) and (max-width: 895px){
+/************************** Mixins called in media-queries.scss **************************/
 
-  .menu-toggle{ right: rem(65); }
-
+/////////////////////////////// Medium Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@mixin menu-toggle--md{
+  .menu-toggle{ right: rem(85); }
 }
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ EXTRA SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (max-width: 760px){
-
-  .menu-toggle{ right: rem(15); }
-
+/////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@mixin menu-toggle--lg{
+  .menu-toggle{ display: none; }
 }
