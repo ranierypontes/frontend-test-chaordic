@@ -1,45 +1,28 @@
-////////////////////////////
-////// SECTION FOOTER //////
-////////////////////////////
+/**
+* SECTION FOOTER
+*/
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGE SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
+// Default
 .section-footer{
-  /* Default Large Screens */
   margin-top: rem(60);
   text-align: center;
 
-  /* Variations Large Screens */
-  // .-othersection
-  &.-othersection{ text-transform: none; }
-
 }
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (min-width: 601px) and (max-width: 992px){
+/************************** Mixins in media-queries.scss **************************/
 
-  .section-footer{
-    /* Default Medium Screens */
-    margin-top: rem(40);
+// // Phones (XS)
+// @include phones{
+//   .section-footer{
+//     margin-top: rem(40);
 
-    /* Variations Medium Screens */
-    // .-othersection
-    &.-othersection{ text-transform: uppercase; }
+//   }
+// }
 
-  }
+// // Large Phones (SM)
+// @include large_phones{
+//   .section-footer{
+//     margin-top: rem(40);
 
-}
-
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (max-width: 600px){
-
-  .section-footer{
-    /* Default Medium Screens */
-    margin-top: rem(40);
-
-    /* Variations Medium Screens */
-    // .-othersection
-    &.-othersection{ text-transform: none; }
-
-  }
-
-}
+//   }
+// }

@@ -30,16 +30,16 @@
 
 /************************** Mixins called in media-queries.scss **************************/
 
-/////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-@mixin header--lg() {
+// /////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// @mixin header-block--lg() {
 
-  .header{
-    height: rem(80);
+//   .header{
+//     height: rem(80);
 
-    .brand-logo{
-      width: rem(180);
-      line-height: rem(80);
-    }
+//     .brand-logo{
+//       width: rem(180);
+//       line-height: rem(80);
+//     }
 
-  }
-}
+//   }
+// }

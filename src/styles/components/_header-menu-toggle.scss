@@ -58,12 +58,12 @@
 
 /************************** Mixins called in media-queries.scss **************************/
 
-/////////////////////////////// Medium Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-@mixin menu-toggle--md{
-  .menu-toggle{ right: rem(85); }
-}
+// /////////////////////////////// Medium Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// @mixin menu-toggle--md{
+//   .menu-toggle{ right: rem(85); }
+// }
 
-/////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-@mixin menu-toggle--lg{
-  .menu-toggle{ display: none; }
-}
+// /////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// @mixin menu-toggle--lg{
+//   .menu-toggle{ display: none; }
+// }

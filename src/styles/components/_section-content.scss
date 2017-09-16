@@ -1,12 +1,9 @@
-/////////////////////////////
-////// SECTION CONTENT //////
-//////////////////// ////////
+/**
+* SECTION CONTENT
+*/
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ DEFAULT (LARGE SCREENS) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-
+// Default
 .section-content{
-
-  /* Default Large Screens */
   margin-top: rem(40);
 
   .title{
@@ -27,42 +24,40 @@
     margin: rem(10 0) !important;
   }
 
-  /* Variations Large Screens */
-  // .-othersection
+  /* Variations */
   .title.-othersection{ color: $secondary; }
 
 }
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ MEDIUM SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (min-width: 601px) and (max-width: 992px){
+/************************** Mixins in media-queries.scss **************************/
 
-  .section-content{
-    /* Default Medium Screens */
-    margin-top: rem(30);
+// /* Phones (XS) */
+// @include phones{
+//   .section-content{
+//     margin-top: rem(20);
 
-    .title{ font-size: rem(20); }
+//     .title{
+//       font-size: rem(20);
+//     }
 
-    /* Variations Medium Screens */
-    // .-othersection
-    .title.-othersection{ color: $white; text-transform: uppercase; }
-    .paragraph.-othersection{ color: $secondary; }
+//     /* Variations */
+//     .title.-othersection{ text-transform: none; }
 
-  }
-}
+//   }
+// }
 
-/*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\ SMALL SCREENS \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
-@media (max-width: 600px){
+// /* Large Phones (SM) */
+// @include tablets{
+//   .section-content{
+//     margin-top: rem(30);
 
-  .section-content{
-    /* Default Small Screens */
-    margin-top: rem(20);
+//     .title{
+//       font-size: rem(20);
+//     }
 
-    .title{ font-size: rem(20); }
+//     /* Variations */
+//     .title.-othersection{ color: $white; text-transform: uppercase; }
+//     .paragraph.-othersection{ color: $secondary; }
 
-    /* Variations Small Screens */
-    // .-othersection
-    .title.-othersection{ text-transform: none; }
-
-  }
-}
-
+//   }
+// }
