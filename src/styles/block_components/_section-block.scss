@@ -26,8 +26,7 @@
 
 /************************** Mixins in media-queries.scss **************************/
 
-/* Phones (XS) */
-@include media_only(){
+@include media_only('PHONES'){
   .section{
     padding: rem(60 0);
 
@@ -38,14 +37,13 @@
   }
 }
 
-// /* Large Phones (SM) */
-// @include large_phones{
-//   .section{
-//     padding: rem(70 0);
+@include media_only('LARGE_PHONES'){
+  .section{
+    padding: rem(70 0);
 
-//     /* Variations */
-//     &.-intro{ padding: rem(110 0); }
-//     &.-othersection{ padding: rem(70 0); }
+    /* Variations */
+    &.-intro{ padding: rem(110 0); }
+    &.-othersection{ padding: rem(70 0); }
 
-//   }
-// }
+  }
+}

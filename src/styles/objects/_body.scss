@@ -1,18 +1,17 @@
-/////////////////////
-////// BODY /////////
-/////////////////////
+/**
+* BODY
+*/
+
 
 // Default
 .body {
-  margin-top: rem(70);
+  margin-top: rem(80);
 }
 
-/* Called in _media-queries.scss */
-// Desktops screens
-@mixin body--lg(){
-
+/************************** Mixins in media-queries.scss **************************/
+@include media_only('PHONES'){
   .body{
-    margin-top: rem(80);
+    margin-top: rem(70);
   }
 
 }

@@ -15,10 +15,10 @@
 // );
 
 $breakpoints: (
-"PHONE":         576px,
-"TABLET":        768px,
-"DESKTOP":       992px,
-"LARGE_DESKTOP": 1200px
+"PHONES":         576px,
+"TABLETS":        768px,
+"DESKTOPS":       992px,
+"LARGE_DESKTOPS": 1200px
 );
 
 // /********************************** Mixins Media Queries **********************************/
@@ -38,28 +38,35 @@ $breakpoints: (
 }
 
 // Delimita media query para único device
-// Default value 'TABLET'
-@mixin media_only($device : "TABLET"){
+// Default value 'TABLETS'
+@mixin media_only($device : "TABLETS"){
 
-  @if $device == "PHONE_LANDSCAPE" {
-    $phone-width: map_get($breakpoints, "PHONE");
-    $tablet-width: map_get($breakpoints, "TABLET");
+  @if $device == "PHONES" {
+    $phone-width: map_get($breakpoints, "PHONES");
+    @media only screen and (max-width: $phone-width - 1px) {
+      @content;
+    }
+  }
+
+  @else if $device == "LARGE_PHONES" {
+    $phone-width: map_get($breakpoints, "PHONES");
+    $tablet-width: map_get($breakpoints, "TABLETS");
     @media only screen and (min-width: $phone-width) and (max-width: $tablet-width - 1px) {
       @content;
     }
   }
 
-  @else if $device == "TABLET" {
-    $tablet-width: map_get($breakpoints, "TABLET");
-    $desktop-width: map_get($breakpoints, "DESKTOP");
+  @else if $device == "TABLETS" {
+    $tablet-width: map_get($breakpoints, "TABLETS");
+    $desktop-width: map_get($breakpoints, "DESKTOPS");
     @media only screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
       @content;
     }
   }
 
-  @else if $device == "DESKTOP" {
-    $desktop-width: map_get($breakpoints, "DESKTOP");
-    $large-desktop-width: map_get($breakpoints, "LARGE_DESKTOP");
+  @else if $device == "DESKTOPS" {
+    $desktop-width: map_get($breakpoints, "DESKTOPS");
+    $large-desktop-width: map_get($breakpoints, "LARGE_DESKTOPS");
     @media only screen and (min-width: $desktop-width) and (max-width: $large-desktop-width - 1px) {
       @content;
     }

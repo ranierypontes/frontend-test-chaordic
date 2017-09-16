@@ -2,7 +2,6 @@
 * HEADER MENU TOGGLE
 */
 
-//////////////////////////// Default Mobile First \\\\\\\\\\\\\\\\\\\\\\\\\
 .menu-toggle {
   position: absolute;
   top: rem(23);
@@ -58,12 +57,10 @@
 
 /************************** Mixins called in media-queries.scss **************************/
 
-// /////////////////////////////// Medium Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-// @mixin menu-toggle--md{
-//   .menu-toggle{ right: rem(85); }
-// }
+@include media_only('TABLETS'){
+  .menu-toggle{ right: rem(85); }
+}
 
-// /////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-// @mixin menu-toggle--lg{
-//   .menu-toggle{ display: none; }
-// }
+@include media('DESKTOPS', min){
+  .menu-toggle{ display: none; }
+}

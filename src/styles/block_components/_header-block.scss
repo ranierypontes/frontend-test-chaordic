@@ -2,22 +2,20 @@
 * HEADER BLOCK
 */
 
-//////////////////////////// Default Mobile First \\\\\\\\\\\\\\\\\\\\\\\\\
 .header{
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1499;
   width: 100%;
-  height: rem(70);
+  height: rem(80);
   color: $white;
   background-color: $primary;
   box-shadow: 0px 2px 5px lighten($black, 10%);
 
   .brand-logo {
-    width: rem(120);
-    line-height: rem(70);
+    width: rem(180);
+    line-height: rem(80);
     float: left;
 
     .logo{
@@ -28,18 +26,17 @@
   }
 }
 
-/************************** Mixins called in media-queries.scss **************************/
+/************************** Mixins in media-queries.scss **************************/
 
-// /////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-// @mixin header-block--lg() {
+@include media_only('PHONES') {
 
-//   .header{
-//     height: rem(80);
+  .header{
+    height: rem(70);
 
-//     .brand-logo{
-//       width: rem(180);
-//       line-height: rem(80);
-//     }
+    .brand-logo{
+      width: rem(120);
+      line-height: rem(70);
+    }
 
-//   }
-// }
+  }
+}

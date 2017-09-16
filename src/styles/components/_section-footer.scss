@@ -2,7 +2,6 @@
 * SECTION FOOTER
 */
 
-// Default
 .section-footer{
   margin-top: rem(60);
   text-align: center;
@@ -11,18 +10,9 @@
 
 /************************** Mixins in media-queries.scss **************************/
 
-// // Phones (XS)
-// @include phones{
-//   .section-footer{
-//     margin-top: rem(40);
+@include media('TABLETS', max){
+  .section-footer{
+    margin-top: rem(40);
 
-//   }
-// }
-
-// // Large Phones (SM)
-// @include large_phones{
-//   .section-footer{
-//     margin-top: rem(40);
-
-//   }
-// }
+  }
+}

@@ -2,7 +2,6 @@
 * SECTION CONTENT
 */
 
-// Default
 .section-content{
   margin-top: rem(40);
 
@@ -24,40 +23,32 @@
     margin: rem(10 0) !important;
   }
 
-  /* Variations */
-  .title.-othersection{ color: $secondary; }
-
 }
 
 /************************** Mixins in media-queries.scss **************************/
 
-// /* Phones (XS) */
-// @include phones{
-//   .section-content{
-//     margin-top: rem(20);
+@include media_only('PHONES'){
+  .section-content{
+    margin-top: rem(20);
 
-//     .title{
-//       font-size: rem(20);
-//     }
+    .title{
+      font-size: rem(20);
+    }
 
-//     /* Variations */
-//     .title.-othersection{ text-transform: none; }
+  }
+}
 
-//   }
-// }
+@include media_only('TABLETS'){
+  .section-content{
+    margin-top: rem(30);
 
-// /* Large Phones (SM) */
-// @include tablets{
-//   .section-content{
-//     margin-top: rem(30);
+    .title{
+      font-size: rem(20);
+    }
 
-//     .title{
-//       font-size: rem(20);
-//     }
+    /* Variations */
+    .title.-othersection{ color: $white; text-transform: uppercase; }
+    .paragraph.-othersection{ color: $secondary; }
 
-//     /* Variations */
-//     .title.-othersection{ color: $white; text-transform: uppercase; }
-//     .paragraph.-othersection{ color: $secondary; }
-
-//   }
-// }
+  }
+}

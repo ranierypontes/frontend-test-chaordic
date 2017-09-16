@@ -2,7 +2,7 @@
 * HEADER MENU
 */
 
-//////////////////////////// Default Mobile First \\\\\\\\\\\\\\\\\\\\\\\\\
+@include media('DESKTOPS', max){
 .header-menu {
   display: block;
   position: fixed;
@@ -39,40 +39,39 @@
     }
   }
 }
+}
+/************************** Mixins in media-queries.scss **************************/
 
-/************************** Mixins called in media-queries.scss **************************/
+@include media('DESKTOPS', min){
+  .header-menu{
+    overflow: hidden;
+    position: relative;
+    margin-top: rem(0);
+    width: auto;
+    height: rem(80);
+    float: right;
+    box-shadow: none;
 
-// /////////////////////////////// Large Devices \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-// @mixin header-menu--lg(){
-//   .header-menu{
-//     overflow: hidden;
-//     position: relative;
-//     margin-top: rem(0);
-//     width: auto;
-//     height: rem(80);
-//     float: right;
-//     box-shadow: none;
+    > .list{
 
-//     > .list{
+      > .item{
+        display: inline-block;
+        line-height: rem(80);
+        padding: rem(0 14);
 
-//       > .item{
-//         display: inline-block;
-//         line-height: rem(80);
-//         padding: rem(0 14);
+        &:first-child{ padding-left: 0; padding-top: 0; }
+        &:last-child{ padding-right: 0; padding-bottom: 0; }
 
-//         &:first-child{ padding-left: 0; padding-top: 0; }
-//         &:last-child{ padding-right: 0; padding-bottom: 0; }
+        > .link{
+          color: $white;
+          font-size: rem(16);
+          font-weight: bold;
 
-//         > .link{
-//           color: $white;
-//           font-size: rem(16);
-//           font-weight: bold;
-
-//           &:hover{
-//             color: $secondary;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+          &:hover{
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
