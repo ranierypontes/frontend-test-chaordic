@@ -38,17 +38,24 @@
   }
 }
 
+@include media_only('LARGE_PHONES'){
+  .section-content{
+    margin-top: rem(25);
+
+    .title{
+      font-size: rem(22);
+    }
+
+  }
+}
+
 @include media_only('TABLETS'){
   .section-content{
     margin-top: rem(30);
 
     .title{
-      font-size: rem(20);
+      font-size: rem(23);
     }
-
-    /* Variations */
-    .title.-othersection{ color: $white; text-transform: uppercase; }
-    .paragraph.-othersection{ color: $secondary; }
 
   }
 }

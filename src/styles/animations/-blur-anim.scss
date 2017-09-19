@@ -1,0 +1,37 @@
+/**
+* BLUR ANIMATIONS
+*/
+
+// Components main-block.scss, footer-block.scss
+.main, .footer{
+  opacity: 1;
+  -webkit-animation: noBlur 0.6s linear 0s 1 alternate;
+  animation: noBlur 0.6s linear 0s 1 alternate;
+
+  // Class menu open blur
+  &.-blur{
+    opacity: 0.8;
+    -webkit-animation: blur 0.4s linear 0s 1 alternate;
+    animation: blur 0.4s linear 0s 1 alternate;
+  }
+
+  // Animation menu open blur
+  @-webkit-keyframes blur{
+    from{ opacity: 1; }
+    to{ opacity: 0.8; }
+  }
+  @keyframes blur{
+    from{ opacity: 1; }
+    to{ opacity: 0.8; }
+  }
+
+  // Animation menu close noBlur
+  @-webkit-keyframes noBlur{
+    from{ opacity: 0.8; }
+    to{ opacity: 1; }
+  }
+  @keyframes noBlur{
+    from{ opacity: 0.8; }
+    to{ opacity: 1; }
+  }
+}

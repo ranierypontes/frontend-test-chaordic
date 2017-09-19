@@ -28,7 +28,7 @@
 
 /************************** Mixins in media-queries.scss **************************/
 
-@include media_only('PHONES') {
+@include media('DESKTOPS', max) {
 
   .header{
     height: rem(70);

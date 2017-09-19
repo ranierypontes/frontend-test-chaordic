@@ -2,14 +2,13 @@
 * BODY
 */
 
-
-// Default
 .body {
   margin-top: rem(80);
+
 }
 
 /************************** Mixins in media-queries.scss **************************/
-@include media_only('PHONES'){
+@include media('DESKTOPS', max){
   .body{
     margin-top: rem(70);
   }

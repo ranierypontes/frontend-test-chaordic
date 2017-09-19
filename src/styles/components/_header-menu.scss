@@ -2,75 +2,68 @@
 * HEADER MENU
 */
 
-@include media('DESKTOPS', max){
-.header-menu {
-  display: block;
-  position: fixed;
-  overflow: scroll;
-  margin-top: rem(70);
+.header-menu{
+  position: relative;
+  overflow: hidden;
+  margin-top: rem(0);
   right: 0;
-  width: 0%;
-  height: 100%;
-  background-color: $primary;
-  box-shadow: -2px 2px 5px lighten($black, 10%);
+  width: auto;
+  height: rem(80);
+  float: right;
 
   > .list{
     list-style: none;
-    line-height: rem(60);
     text-align: center;
     padding: 0;
 
     > .item{
+      display: inline-block;
+      line-height: rem(80);
+      padding: rem(0 14);
 
-      &:first-child{ padding-top: rem(30); }
-      &:last-child{ padding-bottom: rem(100); }
+      &:first-child{ padding-left: 0; padding-top: 0; }
+      &:last-child{ padding-right: 0; padding-bottom: 0; }
 
       > .link{
         color: $white;
-        font-size: rem(30);
+        font-size: rem(16);
         font-weight: bold;
 
         &:hover{
           color: $secondary;
         }
-
       }
-
     }
   }
 }
-}
-/************************** Mixins in media-queries.scss **************************/
 
-@include media('DESKTOPS', min){
-  .header-menu{
-    overflow: hidden;
-    position: relative;
-    margin-top: rem(0);
-    width: auto;
-    height: rem(80);
-    float: right;
-    box-shadow: none;
+/************************** Mixins in media-queries.scss **************************/
+@include media('DESKTOPS', max){
+  .header-menu {
+    position: fixed;
+    overflow: scroll;
+    margin-top: rem(70);
+    right: 0;
+    width: 0%;
+    opacity: 0;
+    height: 100%;
+    background-color: $primary;
+    box-shadow: -2px 2px 5px lighten($black, 10%);
 
     > .list{
 
       > .item{
-        display: inline-block;
-        line-height: rem(80);
-        padding: rem(0 14);
+        display: block;
+        line-height: rem(60);
+        padding: rem(0);
 
-        &:first-child{ padding-left: 0; padding-top: 0; }
-        &:last-child{ padding-right: 0; padding-bottom: 0; }
+        &:first-child{ padding-top: rem(30); }
+        &:last-child{ padding-bottom: rem(60); }
 
         > .link{
-          color: $white;
-          font-size: rem(16);
-          font-weight: bold;
-
-          &:hover{
-            color: $secondary;
-          }
+          font-size: rem(30);
         }
+
       }
     }
   }

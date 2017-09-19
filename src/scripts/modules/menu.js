@@ -9,14 +9,18 @@ class Menu {
     init() {
       const menutoggle = $('.menu-toggle');
       const menu = $('.header-menu');
+      const main = $('.main');
+      const footer = $('.footer');
 
       menutoggle.on('click', function () {
         if (menu.hasClass('-open')) {
-          menu.addClass('-close');
           menu.removeClass('-open');
+          main.removeClass('-blur');
+          footer.removeClass('-blur');
         } else {
           menu.addClass('-open');
-          menu.removeClass('-close');
+          main.addClass('-blur');
+          footer.addClass('-blur');
         }
       });
     }

@@ -1,0 +1,89 @@
+// Footer
+.footer {
+  padding-top: rem(50);
+  color: $white;
+  background-color: $gray;
+
+  .logo{
+    width: auto;
+    color: $white;
+    margin-bottom: rem(30);
+    // border: 1px solid white;
+
+  }
+
+  .nav-title{
+    color: $secondary;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: rem(12);
+    margin-bottom: rem(20);
+    // border: 1px solid white;
+  }
+
+  .nav-list{
+    list-style: none;
+    padding: 0;
+    // border: 1px solid white;
+
+    .navitem{
+      margin-bottom: rem(20);
+      // border: 1px solid white;
+
+      .navlink{
+        color: $white;
+        font-size: rem(15);
+        // border: 1px solid white;
+
+        &:hover{
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .map{
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .nav-footer{
+    list-style: none;
+    padding: 0;
+    margin: rem(80 0 30 0);
+    float: left;
+    // border: 1px solid white;
+
+    > .item{
+      display: inline-block;
+      // border: 1px solid white;
+
+      > .link{
+        color: $white;
+        font-size: rem(12);
+        padding-right: rem(20);
+        // border: 1px solid white;
+
+        &:hover{
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    margin: rem(80 0 30 0);
+    color: $white;
+    font-size: rem(12);
+    float: right;
+    // border: 1px solid white;
+  }
+
+  .rodape{
+    color: $black;
+    background-color: darken($white, 5%);
+    padding: rem(20 0);
+    overflow: hidden;
+    text-align: center;
+  }
+}

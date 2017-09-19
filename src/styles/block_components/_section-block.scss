@@ -7,14 +7,14 @@
   height: auto;
   padding: rem(90 0);
   color: lighten($black, 20%);
-  background-color: white;
+  background-color: darken($white, 5%);
 
   /* Variations */
   &.-intro{
     padding: rem(120 0);
     overflow: hidden;
     color: $black;
-    background-color: darken($white, 5%);
+    background-color: $white;
   }
 
   &.-othersection{
@@ -44,6 +44,17 @@
     /* Variations */
     &.-intro{ padding: rem(110 0); }
     &.-othersection{ padding: rem(70 0); }
+
+  }
+}
+
+@include media_only('TABLETS'){
+  .section{
+    padding: rem(80 0);
+
+    /* Variations */
+    &.-intro{ padding: rem(115 0); }
+    &.-othersection{ padding: rem(80 0); }
 
   }
 }

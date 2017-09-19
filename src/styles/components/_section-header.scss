@@ -48,6 +48,22 @@
   }
 }
 
+@include media_only('LARGE_PHONES'){
+  .section-header{
+
+    > .title{ font-size: rem(32); }
+    > .subtitle{ margin-top: rem(12); font-size: rem(22); }
+    > .divider{ margin: rem(15 85) !important; }
+
+    /* Variations  */
+    // .-intro
+    > .title.-intro{ font-size: rem(65); padding-top: rem(8); }
+    > .subtitle.-intro{ font-size: rem(22); padding-bottom: rem(8); }
+    > .divider.-intro{ margin: rem(15 95) !important; }
+
+  }
+}
+
 @include media_only('TABLETS'){
   .section-header{
 
@@ -62,4 +78,27 @@
     > .divider.-intro{ margin: rem(15 65) !important; }
 
   }
+}
+
+@include media_only('DESKTOPS'){
+  .section-header{
+
+    /* Variations  */
+    // .-intro
+    > .divider.-intro{ margin: rem(15 185) !important; }
+
+  }
+}
+
+@include media('LARGE_DESKTOPS', min){
+  .section-header{
+
+    > .title{ font-size: rem(50); }
+    > .subtitle{ font-size: rem(40); }
+
+    /* Variations  */
+    // .-intro
+    > .title.-intro{ font-size: rem(100); }
+  }
+
 }
