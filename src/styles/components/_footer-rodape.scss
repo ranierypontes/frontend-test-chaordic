@@ -1,0 +1,37 @@
+/**
+* FOOTER RODAPÉ
+*/
+
+.footer-rodape{
+
+  .copyright{
+    text-align: left;
+    font-size: rem(14);
+  }
+
+  .developer{
+    text-align: right;
+    font-size: rem(13);
+
+    .heart{
+      color: red;
+    }
+  }
+
+}
+
+/************************** Mixins in media-queries.scss **************************/
+@include media('TABLETS', max){
+  .footer-rodape{
+
+    .copyright{ text-align: center; }
+
+    .developer{
+      margin-top: rem(10);
+      font-size: rem(12);
+      text-align: center;
+    }
+
+  }
+
+}

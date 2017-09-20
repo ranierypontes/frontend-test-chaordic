@@ -1,0 +1,34 @@
+/**
+* FOOTER CONTACT
+*/
+
+.footer-contact{
+
+  > .phonecall, > .emailsend{
+    display: block;
+    color: $secondary;
+    font-size: rem(22);
+  }
+
+  > .emailsend{
+    margin-top: rem(10);
+    font-size: rem(16);
+  }
+
+  > .schedules{
+    display: block;
+    font-size: rem(12);
+  }
+
+}
+
+/************************** Mixins in media-queries.scss **************************/
+@include media('PHONES', max){
+  .footer-contact{
+
+    > .phonecall{ font-size: rem(20); }
+    > .emailsend{ margin-top: rem(5); }
+    > .schedules{ font-size: rem(11); }
+  }
+
+}

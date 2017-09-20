@@ -1,0 +1,21 @@
+/**
+* FOOTER NAVLIST
+*/
+
+.footer-navlist{
+
+  > .navitem{
+    padding-bottom: rem(5);
+    // border: 1px solid white;
+
+    > .navlink{
+      color: $white;
+      font-size: rem(15);
+      // border: 1px solid white;
+
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
-////////////////////////////
-////// HR DIVIDERS /////////
-////////////////////////////
+/**
+* HR DIVIDERS
+*/
 
 /* Default */
 .divider{
-  margin: rem(10 0);
   border-color: $white;
+  margin: rem(10 0);
   border-radius: rem(10);
 
   /* Variations */

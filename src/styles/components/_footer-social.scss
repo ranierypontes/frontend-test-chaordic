@@ -1,0 +1,21 @@
+/**
+* FOOTER SOCIAL
+*/
+
+.footer-social{
+
+  > .item{
+    display: inline-block;
+
+    > .link{
+      color: $white;
+      font-size: rem(12);
+      padding-right: rem(20);
+
+      &:hover{
+        color: $secondary;
+      }
+
+    }
+  }
+}

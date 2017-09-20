@@ -62,5 +62,5 @@
 }
 
 @include media('DESKTOPS', min){
-  .menu-toggle{ display: none; }
+  .menu-toggle{ display: none; visibility: hidden; }
 }
