@@ -1,0 +1,26 @@
+/**
+* MENU TOGGLE ANIMATIONS
+*/
+
+// Component header-menu-toggle.scss
+
+/************************** Mixins called in media-queries.scss **************************/
+@include media('DESKTOPS', max){
+  .menu-toggle{
+
+    &.-open{
+
+      .bar{
+        background: transparent;
+        &:after {
+          transform: rotate(45deg) translate(0px, -7px);
+        }
+        &:before {
+          transform: rotate(-45deg) translate(-3px, 10px);
+        }
+      }
+
+    }
+
+  }
+}

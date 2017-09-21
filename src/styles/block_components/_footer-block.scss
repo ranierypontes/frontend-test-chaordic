@@ -19,6 +19,7 @@
   }
 
   .footer-map{
+    position: relative;
     width: 100%;
     height: rem(300);
     margin-bottom: rem(30);
@@ -57,7 +58,7 @@
   .footer{
 
     .title{ font-size: rem(16); }
-    .footer-map{ height: rem(200); }
+    .footer-map{ height: rem(250); }
   }
 
 }

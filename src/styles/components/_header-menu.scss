@@ -40,15 +40,15 @@
 /************************** Mixins in media-queries.scss **************************/
 @include media('DESKTOPS', max){
   .header-menu {
+    visibility: hidden;
     position: fixed;
     overflow: scroll;
     margin-top: rem(70);
     right: 0;
-    width: 0%;
+    width: 0;
     opacity: 0;
     height: 100%;
     background-color: $primary;
-    box-shadow: -2px 2px 5px lighten($black, 10%);
 
     > .list{
 

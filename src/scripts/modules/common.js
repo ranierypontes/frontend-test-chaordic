@@ -1,6 +1,5 @@
 import Mask from './mask';
 import Slide from './slide';
-import Menu from './menu';
 
 class Common {
   constructor() {
@@ -9,7 +8,7 @@ class Common {
     // Instance imports
     new Mask();
     new Slide();
-    new Menu();
+
 
     // Call methods
     this.fixedI10();
