@@ -3,17 +3,6 @@
 */
 
 // /************************************** Breakpoints ***************************************/
-// $breakpoints: (
-//   "phone":        400px,
-//   "phone-wide":   480px,
-//   "phablet":      560px,
-//   "tablet-small": 640px,
-//   "tablet":       768px,
-//   "tablet-wide":  1024px,
-//   "desktop":      1248px,
-//   "desktop-wide": 1440px
-// );
-
 $breakpoints: (
 "PHONES":         576px,
 "TABLETS":        768px,
@@ -38,7 +27,6 @@ $breakpoints: (
 }
 
 // Delimita media query para único device
-// Default value 'TABLETS'
 @mixin media_only($device : "TABLETS"){
 
   @if $device == "PHONES" {

@@ -2,44 +2,52 @@
 * HEADER MENU TOGGLE
 */
 
-.menu-toggle {
-  position: absolute;
-  top: rem(23);
-  right: rem(15);
-  width: rem(22);
-  height: rem(22);
-  cursor: pointer;
+/************************** Mixins called in media-queries.scss **************************/
+@include media("DESKTOPS", max) {
 
-  .bar {
-    position: absolute;
-    width: 100%;
-    height: rem(3);
-    background: $white;
-    margin-top: rem(10);
-    transition: all 0.3s;
+  .menu-toggle {
+    position: relative;
+    float: right;
+    top: rem(26);
+    width: rem(28);
+    height: auto;
+    cursor: pointer;
 
-    &:before, &:after {
+    > .bar {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: rem(3);
+      margin: rem(8 0);
+      background: $white;
+      border-radius: rem(10);
+      transition: all 0.3s;
+    }
+
+    > .bar:before, > .bar:after {
       content: "";
       position: absolute;
       width: 100%;
       height: rem(3);
-      background: #fff;
-      top: rem(-7);
+      border-radius: rem(10);
+      background: $white;
+      top: rem(-8);
       transition: all 0.3s;
     }
 
-    &:after {
-      top: rem(7);
+    > .bar:after {
+      top: rem(8);
     }
+
   }
+
 }
 
-/************************** Mixins called in media-queries.scss **************************/
+@include media('DESKTOPS', min) {
 
-@include media_only('TABLETS'){
-  .menu-toggle{ right: rem(85); }
-}
+  .menu-toggle {
+    display: none;
+    visibility: hidden;
+  }
 
-@include media('DESKTOPS', min){
-  .menu-toggle{ display: none; visibility: hidden; }
 }

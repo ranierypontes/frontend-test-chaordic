@@ -2,25 +2,28 @@
 * MENU TOGGLE ANIMATIONS
 */
 
-// Component header-menu-toggle.scss
-
 /************************** Mixins called in media-queries.scss **************************/
-@include media('DESKTOPS', max){
-  .menu-toggle{
+@include media('DESKTOPS', max) {
 
-    &.-open{
+  // Component header-menu-toggle.scss
+  .menu-toggle {
 
-      .bar{
+    &.-open {
+
+      > .bar {
         background: transparent;
-        &:after {
-          transform: rotate(45deg) translate(0px, -7px);
-        }
-        &:before {
-          transform: rotate(-45deg) translate(-3px, 10px);
-        }
+      }
+
+      > .bar:before {
+        transform: rotate(-45deg) translate(-6px, 4px);
+      }
+
+      > .bar:after {
+        transform: rotate(45deg) translate(-7px, -5px);
       }
 
     }
 
   }
+
 }

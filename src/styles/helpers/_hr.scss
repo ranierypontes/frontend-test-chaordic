@@ -1,0 +1,34 @@
+/**
+* HR DIVIDERS
+*/
+
+.hr {
+  border-color: $black;
+  margin: rem(10 0);
+  border-radius: rem(10);
+
+  /* Variations */
+  // Sizes
+  &.-small { border-width: rem(4); }
+  &.-med { border-width: rem(6); }
+  &.-large { border-width: rem(10); }
+  &.-extralarge { border-width: rem(15); }
+
+  // Styles
+  &.-dashed { border-style: dashed; }
+  &.-dotted { border-style: dotted; }
+  &.-double { border-style: double; }
+  &.-groove { border-style: groove; }
+  &.-ridge { border-style: ridge; }
+
+  // Colors
+  &.-black { border-color: $black; }
+  &.-primary { border-color: $primary; }
+  &.-secondary { border-color: $secondary; }
+  &.-third { border-color: $third; }
+  &.-success { border-color: $success; }
+  &.-danger { border-color: $danger; }
+  &.-warning { border-color: $warning; }
+  &.-info { border-color: $info; }
+
+}

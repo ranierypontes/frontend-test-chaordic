@@ -4,12 +4,12 @@
 
 .body {
   margin-top: rem(80);
-
 }
 
 /************************** Mixins in media-queries.scss **************************/
 @include media('DESKTOPS', max){
-  .body{
+
+  .body {
     margin-top: rem(70);
   }
 

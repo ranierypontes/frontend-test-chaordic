@@ -2,31 +2,34 @@
 * FOOTER RODAPÉ
 */
 
-.footer-rodape{
+.footer-rodape {
 
-  .copyright{
+  .copyright {
     text-align: left;
-    font-size: rem(14);
+    font-size: rem(16);
   }
 
-  .developer{
+  .developer {
     text-align: right;
     font-size: rem(13);
+  }
 
-    .heart{
-      color: red;
-    }
+  .developer .heart {
+    color: red;
   }
 
 }
 
 /************************** Mixins in media-queries.scss **************************/
-@include media('TABLETS', max){
-  .footer-rodape{
+@include media('TABLETS', max) {
 
-    .copyright{ text-align: center; }
+  .footer-rodape {
 
-    .developer{
+    .copyright{
+      text-align: center;
+    }
+
+    .developer {
       margin-top: rem(10);
       font-size: rem(12);
       text-align: center;

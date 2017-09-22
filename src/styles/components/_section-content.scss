@@ -2,60 +2,61 @@
 * SECTION CONTENT
 */
 
-.section-content{
+.section-content {
   margin-top: rem(40);
 
-  .title{
+  .title {
     margin-top: rem(40);
     font-size: rem(25);
     font-weight: bold;
     text-align: left;
   }
 
-  .paragraph{
+  .paragraph {
     margin-bottom: rem(5);
     font-size: rem(16);
     text-align: left;
-  }
-
-  .divider{
-    @extend .divider;
-    margin: rem(10 0) !important;
   }
 
 }
 
 /************************** Mixins in media-queries.scss **************************/
 
-@include media_only('PHONES'){
-  .section-content{
+@include media_only('PHONES') {
+
+  .section-content {
     margin-top: rem(20);
 
-    .title{
+    .title {
       font-size: rem(20);
     }
 
   }
+
 }
 
-@include media_only('LARGE_PHONES'){
-  .section-content{
+@include media_only('LARGE_PHONES') {
+
+  .section-content {
     margin-top: rem(25);
 
-    .title{
+    .title {
       font-size: rem(22);
     }
 
   }
+
 }
 
-@include media_only('TABLETS'){
-  .section-content{
+@include media_only('TABLETS') {
+
+  .section-content {
     margin-top: rem(30);
 
-    .title{
+    .title {
       font-size: rem(23);
     }
 
   }
+
 }

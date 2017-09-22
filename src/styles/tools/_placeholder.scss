@@ -1,4 +1,7 @@
-// Placeholder
+/**
+* PLACEHOLDER
+*/
+
 @mixin placeholder-color($color) {
     &::-webkit-input-placeholder { color: $color; }
     &:-moz-placeholder { color: $color; }

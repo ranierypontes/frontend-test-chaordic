@@ -2,22 +2,22 @@
 * SECTION BLOCK
 */
 
-.section{
+.section {
   width: 100%;
   height: auto;
   padding: rem(90 0);
   color: lighten($black, 20%);
   background-color: darken($white, 5%);
 
-  /* Variations */
-  &.-intro{
-    padding: rem(120 0);
+  /* Variants */
+  &.-intro {
+    padding: rem(140 0);
     overflow: hidden;
     color: $black;
     background-color: $white;
   }
 
-  &.-othersection{
+  &.-othersection {
     color: $white;
     background-color: $primary;
   }
@@ -26,35 +26,56 @@
 
 /************************** Mixins in media-queries.scss **************************/
 
-@include media_only('PHONES'){
-  .section{
+@include media_only('PHONES') {
+
+  .section {
     padding: rem(60 0);
 
-    /* Variations */
-    &.-intro{ padding: rem(105 0); }
-    &.-othersection{ padding: rem(60 0); }
+    /* Variants */
+    &.-intro{
+      padding: rem(165 0);
+    }
+
+    &.-othersection{
+      padding: rem(60 0);
+    }
 
   }
+
 }
 
-@include media_only('LARGE_PHONES'){
-  .section{
+@include media_only('LARGE_PHONES') {
+
+  .section {
     padding: rem(70 0);
 
-    /* Variations */
-    &.-intro{ padding: rem(110 0); }
-    &.-othersection{ padding: rem(70 0); }
+    /* Variants */
+    &.-intro{
+      padding: rem(170 0);
+    }
+
+    &.-othersection{
+      padding: rem(70 0);
+    }
 
   }
+
 }
 
-@include media_only('TABLETS'){
-  .section{
+@include media_only('TABLETS') {
+
+  .section {
     padding: rem(80 0);
 
-    /* Variations */
-    &.-intro{ padding: rem(115 0); }
-    &.-othersection{ padding: rem(80 0); }
+    /* Variants */
+    &.-intro{
+      padding: rem(175 0);
+    }
+
+    &.-othersection{
+      padding: rem(80 0);
+    }
 
   }
+
 }

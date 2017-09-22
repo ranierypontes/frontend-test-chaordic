@@ -2,17 +2,17 @@
 * SECTION FOOTER
 */
 
-.section-footer{
+.section-footer {
   margin-top: rem(60);
   text-align: center;
-
 }
 
 /************************** Mixins in media-queries.scss **************************/
 
-@include media('TABLETS', max){
-  .section-footer{
-    margin-top: rem(40);
+@include media('TABLETS', max) {
 
+  .section-footer {
+    margin-top: rem(40);
   }
+
 }

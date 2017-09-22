@@ -7,37 +7,37 @@
   background-color: $gray;
   color: $white;
 
-  .logo{
+  .logo {
     width: auto;
     margin-bottom: rem(30);
   }
 
-  .title{
+  .title {
     color: darken($secondary, 3%);
     font-weight: bold;
     font-size: rem(18);
   }
 
-  .footer-map{
+  .footer-map {
     position: relative;
     width: 100%;
     height: rem(300);
     margin-bottom: rem(30);
   }
 
-  .footer-contact{
+  .footer-contact {
     height: rem(120);
     margin-bottom: rem(30);
   }
 
-  .footer-social{
+  .footer-social {
     height: rem(120);
     margin-bottom: rem(30);
     list-style: none;
     padding: 0;
   }
 
-  .footer-navlist{
+  .footer-navlist {
     list-style: none;
     padding: 0;
     text-align: left;
@@ -45,20 +45,31 @@
     margin-bottom: rem(30);
   }
 
-  .footer-rodape{
+  .footer-rodape {
     color: lighten($black, 30%);
     background-color: darken($white, 5%);
-    padding: rem(20 0);
+    padding: rem(30 0);
   }
 
 }
 
 /************************** Mixins in media-queries.scss **************************/
-@include media('PHONES', max){
-  .footer{
+@include media('PHONES', max) {
 
-    .title{ font-size: rem(16); }
-    .footer-map{ height: rem(250); }
+  .footer {
+
+    .title {
+      font-size: rem(16);
+    }
+
+    .footer-map {
+      height: rem(250);
+    }
+
+    .footer-rodape {
+      padding: rem(20 0);
+    }
+
   }
 
 }

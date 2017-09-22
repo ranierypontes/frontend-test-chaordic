@@ -2,7 +2,7 @@
 * HEADER BLOCK
 */
 
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,29 +13,29 @@
   background-color: $primary;
 
   .brand-logo {
-    width: rem(180);
+    width: auto;
     line-height: rem(80);
     float: left;
-
-    .logo{
-      color: $white;
-      width: 100%;
-    }
-
   }
+
+  .brand-logo .logo {
+    color: $white;
+    width: 100%;
+  }
+
 }
 
 /************************** Mixins in media-queries.scss **************************/
 
 @include media('DESKTOPS', max) {
 
-  .header{
+  .header {
     height: rem(70);
 
-    .brand-logo{
-      width: rem(120);
+    .brand-logo {
       line-height: rem(70);
     }
 
   }
+
 }

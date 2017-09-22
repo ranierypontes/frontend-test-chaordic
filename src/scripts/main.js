@@ -1,9 +1,9 @@
 import Common from './modules/common';
 import Menu from './modules/menu';
 import Map from './modules/map';
-import MapGetPosition from './modules/mapGetPosition';
+// import MapGetPosition from './modules/mapGetPosition';
 
-const availableModules = { Common, Menu, Map, MapGetPosition };
+const availableModules = { Common, Menu, Map };
 
 window.modules = {};
 

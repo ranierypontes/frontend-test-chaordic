@@ -6,16 +6,16 @@
 
   > .item{
     display: inline-block;
-
-    > .link{
-      color: $white;
-      font-size: rem(12);
-      padding-right: rem(20);
-
-      &:hover{
-        color: $secondary;
-      }
-
-    }
   }
+
+  > .item > .link{
+    color: $white;
+    font-size: rem(12);
+    padding-right: rem(20);
+  }
+
+  > .item > .link:hover{
+    color: $secondary;
+  }
+
 }
