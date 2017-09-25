@@ -3,9 +3,9 @@
 */
 
 .footer {
-  padding-top: rem(30);
-  background-color: $gray;
-  color: $white;
+  padding-top: rem(50);
+  background-color: $white;
+  color: $black;
 
   .logo {
     width: auto;
@@ -13,7 +13,7 @@
   }
 
   .title {
-    color: darken($secondary, 3%);
+    color: darken($primary, 3%);
     font-weight: bold;
     font-size: rem(18);
   }
@@ -22,7 +22,7 @@
     position: relative;
     width: 100%;
     height: rem(300);
-    margin-bottom: rem(30);
+    margin-bottom: rem(50);
   }
 
   .footer-contact {
@@ -42,12 +42,12 @@
     padding: 0;
     text-align: left;
     height: rem(120);
-    margin-bottom: rem(30);
+    margin-bottom: rem(50);
   }
 
   .footer-rodape {
-    color: lighten($black, 30%);
-    background-color: darken($white, 5%);
+    color: $white;
+    background-color: $primary;
     padding: rem(30 0);
   }
 

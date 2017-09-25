@@ -12,14 +12,17 @@
 
       > .bar {
         background: transparent;
+        transition: all 0.3s;
       }
 
       > .bar:before {
         transform: rotate(-45deg) translate(-6px, 4px);
+        transition: transform 0.5s;
       }
 
       > .bar:after {
         transform: rotate(45deg) translate(-7px, -5px);
+        transition: transform 0.5s;
       }
 
     }

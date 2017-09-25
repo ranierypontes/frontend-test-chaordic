@@ -9,12 +9,13 @@
   }
 
   > .navitem > .navlink {
-    color: $white;
+    color: $black;
     font-size: rem(15);
   }
 
   > .navitem > .navlink:hover {
     color: $secondary;
+    transition: all 0.2s;
   }
 
 }

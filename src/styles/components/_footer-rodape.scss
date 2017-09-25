@@ -18,6 +18,14 @@
     color: red;
   }
 
+  .developer .link {
+    color: darken($white, 15%);
+  }
+
+  .developer .link:hover {
+    color: $white;
+  }
+
 }
 
 /************************** Mixins in media-queries.scss **************************/

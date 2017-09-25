@@ -1,5 +1,5 @@
 /**
-* HR DIVIDERS
+* HR
 */
 
 .hr {
@@ -7,7 +7,7 @@
   margin: rem(10 0);
   border-radius: rem(10);
 
-  /* Variations */
+  /* Variants */
   // Sizes
   &.-small { border-width: rem(4); }
   &.-med { border-width: rem(6); }
@@ -31,4 +31,12 @@
   &.-warning { border-color: $warning; }
   &.-info { border-color: $info; }
 
+}
+
+/* Other Variants */
+// hr footer
+.hr-footer{
+  @extend .hr;
+  @extend .hr.-small;
+  @extend .hr.-primary;
 }
