@@ -10,7 +10,7 @@
   }
 
   > .linkmap {
-    @extend .button;
+    @extend .btn;
     position: absolute;
     z-index: 1;
     right: rem(30);

@@ -1,39 +1,18 @@
-// // Tools
-// @import "tools/*";
-// // Settings
-// @import "settings/*";
-// // Media Queries
-// @import "media-queries";
-// // Generic */
-// @import "generic/*";
-// // Base Styles
-// @import "base";
-// // Objects
-// @import "objects/*";
-// // Block Components
-// @import "block_components/*";
-// // Components
-// @import "components/*";
-// // Helpers
-// @import "helpers/*";
-// // Animations
-// @import "animations/*";
-
-// Tools
-@import "tools/*";
 // Settings
-@import "settings/*";
+@import "1_settings/*";
+// Tools
+@import "2_tools/*";
 // Generic
-@import "generic/*";
+@import "3_generic/*";
 // Base Styles
-@import "base";
+@import "4_base/*";
 // Objects
-@import "objects/*";
+@import "5_objects/*";
 // Block Components
-@import "block_components/*";
+@import "6_block-components/*";
 // Components
-@import "components/*";
-// Helpers
-@import "helpers/*";
+@import "7_components/*";
 // Animations
-@import "animations/*";
+@import "8_animations/*";
+// Helpers
+@import "9_helpers/*";
