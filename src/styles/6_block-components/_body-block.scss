@@ -6,7 +6,8 @@
   margin-top: rem(80);
 }
 
-/************************** Mixins in media-queries.scss **************************/
+/************************** MEDIA QUERIES **************************/
+
 @include media('DESKTOPS', max){
 
   .body {

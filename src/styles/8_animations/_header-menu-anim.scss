@@ -2,7 +2,8 @@
 * MENU ANIMATIONS
 */
 
-/************************** Mixins called in media-queries.scss **************************/
+/************************** MEDIA QUERIES **************************/
+// Mobile First
 @include media('DESKTOPS', max) {
 
   // Component header-menu.scss

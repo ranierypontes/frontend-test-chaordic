@@ -2,38 +2,44 @@
 * HEADER BLOCK
 */
 
+// Mobile First
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1499;
   width: 100%;
-  height: rem(80);
+  height: rem(70);
   color: $white;
   background-color: $primary;
 
   .brand-logo {
     width: auto;
-    line-height: rem(80);
+    line-height: rem(70);
     float: left;
   }
 
   .brand-logo .logo {
     color: $white;
-    width: 100%;
+    width: rem(30);
   }
 
 }
 
-/************************** Mixins in media-queries.scss **************************/
+/************************** MEDIA QUERIES **************************/
 
-@include media('DESKTOPS', max) {
+@include media('DESKTOPS', min) {
 
   .header {
-    height: rem(70);
+    height: rem(80);
 
     .brand-logo {
-      line-height: rem(70);
+      line-height: rem(80);
+    }
+
+    .brand-logo .logo {
+      color: $white;
+      width: rem(50);
     }
 
   }

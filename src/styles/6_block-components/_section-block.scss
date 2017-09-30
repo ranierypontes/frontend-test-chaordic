@@ -2,47 +2,31 @@
 * SECTION BLOCK
 */
 
+// Mobile First
 .section {
   width: 100%;
   height: auto;
-  padding: rem(90 0);
+  padding: rem(60 0);
   color: lighten($black, 20%);
   background-color: darken($white, 5%);
 
   /* Variants */
   &.-intro {
-    padding: rem(160 0);
+    padding: rem(165 0);
     overflow: hidden;
     color: $black;
     background-color: $white;
   }
 
   &.-othersection {
+    padding: rem(60 0);
     color: $white;
     background-color: $primary;
   }
 
 }
 
-/************************** Mixins in media-queries.scss **************************/
-
-@include media_only('PHONES') {
-
-  .section {
-    padding: rem(60 0);
-
-    /* Variants */
-    &.-intro{
-      padding: rem(165 0);
-    }
-
-    &.-othersection{
-      padding: rem(60 0);
-    }
-
-  }
-
-}
+/************************** MEDIA QUERIES **************************/
 
 @include media_only('LARGE_PHONES') {
 
@@ -74,6 +58,20 @@
 
     &.-othersection{
       padding: rem(80 0);
+    }
+
+  }
+
+}
+
+@include media('DESKTOPS', min) {
+
+  .section {
+    padding: rem(90 0);
+
+    /* Variants */
+    &.-intro{
+      padding: rem(165 0);
     }
 
   }

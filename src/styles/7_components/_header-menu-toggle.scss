@@ -2,7 +2,8 @@
 * HEADER MENU TOGGLE
 */
 
-/************************** Mixins called in media-queries.scss **************************/
+/************************** MEDIA QUERIES **************************/
+// Mobile First
 @include media("DESKTOPS", max) {
 
   .menu-toggle {
