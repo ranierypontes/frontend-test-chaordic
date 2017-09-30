@@ -3,6 +3,10 @@
 */
 
 .footer-social{
+  height: rem(125);
+  margin-bottom: rem(30);
+  list-style: none;
+  padding: 0;
 
   > .item{
     display: inline-block;

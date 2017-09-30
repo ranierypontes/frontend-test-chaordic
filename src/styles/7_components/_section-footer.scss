@@ -2,17 +2,28 @@
 * SECTION FOOTER
 */
 
+// Mobile First
 .section-footer {
-  margin-top: rem(60);
+  @include make-row();
+  margin-top: rem(40);
   text-align: center;
+
+  > .block-1 {
+    @include make-xs-column(12);
+  }
+
+  .paragraph {
+    text-transform: capitalize;
+  }
+
 }
 
 /************************** Mixins in media-queries.scss **************************/
 
-@include media('TABLETS', max) {
+@include media('TABLETS', min) {
 
   .section-footer {
-    margin-top: rem(40);
+    margin-top: rem(60);
   }
 
 }

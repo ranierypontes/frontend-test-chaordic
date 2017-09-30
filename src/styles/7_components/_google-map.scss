@@ -1,29 +1,34 @@
 /**
-* MAP
+* GOOGLE MAP
 */
 
-.footer-map {
+// Mobile First
+.google-map {
+  position: relative;
+  width: 100%;
+  height: rem(250);
+  margin-bottom: rem(30);
 
   > .map {
     width: 100%;
     height: 100%;
   }
 
-  > .linkmap {
+  > .btnmap {
     @extend .btn;
     position: absolute;
     z-index: 1;
-    right: rem(30);
-    bottom: rem(30);
+    right: rem(10);
+    bottom: rem(25);
     padding: rem(10 20);
     border-radius: rem(50);
-    font-size: rem(20);
+    font-size: rem(16);
     box-shadow: 1px 1px 2px $gray;
     color: $white;
     background-color: darken($secondary, 5%);
   }
 
-  > .linkmap:hover, .linkmap:focus, .linkmap:active {
+  > .btnmap:hover, .btnmap:focus, .btnmap:active {
     color: $white;
     background-color: darken($secondary, 10%);
   }
@@ -31,14 +36,15 @@
 }
 
 /************************** Mixins in media-queries.scss **************************/
-@include media('PHONES', max) {
+@include media('PHONES', min) {
 
-  .footer-map {
+  .google-map {
+    height: rem(320);
 
-    > .linkmap {
-      right: rem(10);
-      bottom: rem(25);
-      font-size: rem(16);
+    > .btnmap {
+      right: rem(30);
+      bottom: rem(35);
+      font-size: rem(20);
     }
 
   }

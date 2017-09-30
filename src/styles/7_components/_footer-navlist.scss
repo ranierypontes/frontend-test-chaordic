@@ -3,6 +3,10 @@
 */
 
 .footer-navlist {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  height: rem(125);
 
   > .navitem {
     padding-bottom: rem(5);

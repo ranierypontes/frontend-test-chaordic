@@ -2,72 +2,68 @@
 * FOOTER BLOCK
 */
 
+// Mobile First
 .footer {
-  padding-top: rem(50);
+  padding: rem(30 0);
   background-color: $white;
   color: $black;
-
-  .logo {
-    width: auto;
-    margin-bottom: rem(30);
-  }
 
   .title {
     color: darken($primary, 3%);
     font-weight: bold;
-    font-size: rem(18);
+    font-size: rem(16);
   }
 
-  .footer-map {
-    position: relative;
-    width: 100%;
-    height: rem(300);
-    margin-bottom: rem(50);
-  }
-
-  .footer-contact {
-    height: rem(120);
+  .footer-logo {
     margin-bottom: rem(30);
+    // Grid
+    @include make-xs-column(12);
   }
 
-  .footer-social {
-    height: rem(120);
-    margin-bottom: rem(30);
-    list-style: none;
-    padding: 0;
+  .footer-logo .logo {
+    width: rem(50);
   }
 
-  .footer-navlist {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    height: rem(120);
-    margin-bottom: rem(50);
+  .map-block {
+    // Grid
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(6);
   }
 
-  .footer-rodape {
-    color: $white;
-    background-color: $primary;
-    padding: rem(30 0);
+  .contact-block {
+    // Grid
+    @include make-xs-column(6);
+    @include make-sm-column(6);
+    @include make-md-column(3);
+    @include make-lg-column(3);
+  }
+
+  .social-block {
+    // Grid
+    @include make-xs-column(6);
+    @include make-sm-column(6);
+    @include make-md-column(3);
+    @include make-lg-column(3);
+  }
+
+  .navlist-block {
+    // Grid
+    @include make-xs-column(6);
+    @include make-sm-column(6);
+    @include make-md-column(3);
+    @include make-lg-column(3);
   }
 
 }
 
 /************************** Mixins in media-queries.scss **************************/
-@include media('PHONES', max) {
+@include media('PHONES', min) {
 
   .footer {
 
     .title {
-      font-size: rem(16);
-    }
-
-    .footer-map {
-      height: rem(250);
-    }
-
-    .footer-rodape {
-      padding: rem(20 0);
+      font-size: rem(18);
     }
 
   }
