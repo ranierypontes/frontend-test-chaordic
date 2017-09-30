@@ -4,13 +4,11 @@
 
 // Mobile First
 .footer-contact {
-  height: rem(125);
-  margin-bottom: rem(30);
 
   > .phonecall, > .emailsend {
     display: block;
     color: $secondary;
-    font-size: rem(20);
+    font-size: rem(18);
   }
 
   > .emailsend {
@@ -25,7 +23,7 @@
 
 }
 
-/************************** Mixins in media-queries.scss **************************/
+/************************** MEDIA QUERIES **************************/
 @include media('PHONES', min){
 
   .footer-contact {

@@ -4,22 +4,23 @@
 
 // Mobile First
 .footer-social{
-  height: rem(125);
-  margin-bottom: rem(30);
-  list-style: none;
-  padding: 0;
 
-  > .item{
+  .list{
+    list-style: none;
+    padding: 0;
+  }
+
+  .list > .item{
     display: inline-block;
   }
 
-  > .item > .link{
+  .list > .item > .link{
     color: $black;
     font-size: rem(12);
     padding-right: rem(20);
   }
 
-  > .item > .link:hover{
+  .list > .item > .link:hover{
     color: $secondary;
     transition: all 0.2s;
   }

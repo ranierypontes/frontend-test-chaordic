@@ -7,7 +7,6 @@
   position: relative;
   width: 100%;
   height: rem(250);
-  margin-bottom: rem(30);
 
   > .map {
     width: 100%;
@@ -35,11 +34,11 @@
 
 }
 
-/************************** Mixins in media-queries.scss **************************/
+/************************** MEDIA QUERIES **************************/
 @include media('PHONES', min) {
 
   .google-map {
-    height: rem(320);
+    height: rem(280);
 
     > .btnmap {
       right: rem(30);

@@ -4,7 +4,7 @@
 
 // Mobile First
 .footer {
-  padding: rem(50 0);
+  padding: rem(30 0);
   background-color: $white;
   color: $black;
 
@@ -14,17 +14,22 @@
     font-size: rem(16);
   }
 
-  .footer-logo {
-    margin-bottom: rem(30);
+  .hrfooter{
+    @include hr($primary, solid, 2);
+  }
+
+  .logo-block {
+    padding: rem(15 0);
     // Grid
     @include make-xs-column(12);
   }
 
-  .footer-logo .logo {
+  .logo-block .logo {
     width: rem(50);
   }
 
   .map-block {
+    padding: rem(15 0);
     // Grid
     @include make-xs-column(12);
     @include make-sm-column(12);
@@ -32,6 +37,8 @@
   }
 
   .contact-block {
+    padding: rem(15 0);
+    height: rem(160);
     // Grid
     @include make-xs-column(6);
     @include make-sm-column(6);
@@ -40,6 +47,8 @@
   }
 
   .social-block {
+    padding: rem(15 0);
+    height: rem(160);
     // Grid
     @include make-xs-column(6);
     @include make-sm-column(6);
@@ -48,11 +57,12 @@
   }
 
   .navlist-block {
+    padding: rem(15 0);
     // Grid
-    @include make-xs-column(6);
-    @include make-sm-column(6);
-    @include make-md-column(3);
-    @include make-lg-column(3);
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(6);
+    @include make-lg-column(6);
   }
 
 }

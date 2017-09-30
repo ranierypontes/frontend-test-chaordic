@@ -4,21 +4,26 @@
 
 // Mobile First
 .footer-navlist {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  height: rem(125);
 
-  > .navitem {
+  .navlist {
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+    margin-right: rem(20);
+    float: left;
+    display: inline-block;
+  }
+
+  .navlist > .navitem {
     padding-bottom: rem(5);
   }
 
-  > .navitem > .navlink {
+  .navlist > .navitem > .navlink {
     color: $black;
     font-size: rem(15);
   }
 
-  > .navitem > .navlink:hover {
+  .navlist > .navitem > .navlink:hover {
     color: $secondary;
     transition: all 0.2s;
   }
