@@ -2,13 +2,13 @@
 * FONTS
 */
 
-// $fontastic: 'bootstrap-boilerplate';
+$fontastic: 'boilerplate-icons';
 
-// /* Fontastic */
-// @include font-face(
-//     $fontastic,
-//     "../fonts/fontastic/#{$fontastic}",
-//     normal,
-//     normal,
-//     eot woff ttf svg
-// );
+/* Fontastic boilerplate icons*/
+@include font-face(
+  $fontastic,
+  "../fonts/fontastic/#{$fontastic}",
+  normal,
+  normal,
+  eot woff ttf svg
+);

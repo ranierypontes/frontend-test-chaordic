@@ -9,6 +9,7 @@
     display: block;
     color: $secondary;
     font-size: rem(18);
+    text-align: center;
   }
 
   > .emailsend {
@@ -19,6 +20,7 @@
   > .schedules {
     display: block;
     font-size: rem(11);
+    text-align: center;
   }
 
 }
@@ -30,14 +32,16 @@
 
     > .phonecall {
       font-size: rem(22);
+      text-align: left;
     }
 
     > .emailsend {
-      margin-top: rem(10);
+      text-align: left;
     }
 
     > .schedules {
       font-size: rem(12);
+      text-align: left;
     }
 
   }

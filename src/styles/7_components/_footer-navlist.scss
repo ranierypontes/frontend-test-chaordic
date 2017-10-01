@@ -8,10 +8,11 @@
   .navlist {
     position: relative;
     list-style: none;
-    padding-left: 0;
-    margin-right: rem(20);
+    padding: 0;
+    margin-right: rem(50);
     float: left;
     display: inline-block;
+    transition: all .2s;
   }
 
   .navlist > .navitem {
@@ -19,13 +20,12 @@
   }
 
   .navlist > .navitem > .navlink {
-    color: $black;
+    color: $primary;
     font-size: rem(15);
   }
 
   .navlist > .navitem > .navlink:hover {
     color: $secondary;
-    transition: all 0.2s;
   }
 
 }

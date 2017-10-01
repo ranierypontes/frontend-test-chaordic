@@ -57,6 +57,8 @@
   }
 
   .navlist-block {
+    @extend .hidden-xs;
+    @extend .hidden-sm;
     padding: rem(15 0);
     // Grid
     @include make-xs-column(12);
