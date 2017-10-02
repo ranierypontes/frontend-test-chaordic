@@ -1,5 +1,5 @@
 import Mask from './mask';
-import Slide from './slide';
+// import Slide from './slide';
 
 class Common {
   constructor() {
@@ -7,7 +7,7 @@ class Common {
 
     // Instance imports
     new Mask();
-    new Slide();
+    // new Slide();
 
 
     // Call methods
