@@ -1,0 +1,130 @@
+/**
+* SLIDES SETTINGS
+*/
+// Mobile First
+
+/* Custom slide properties */
+.swiper-container {
+  width: 100%;
+  height: 580px;
+}
+
+.swiper-slide {
+  background-color: $white;
+  text-align: center;
+
+  // Center slide text vertically
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  &.-slide1 {
+    @extend .bg-cover;
+    color: $secondary;
+    text-shadow: 2px 2px 4px $black;
+    background-image: url('../../images/slide1.jpg');
+  }
+
+  &.-slide2 {
+    @extend .bg-cover;
+    color: $secondary;
+    text-shadow: 2px 2px 4px $black;
+    background-image: url('../../images/slide2.jpg');
+  }
+
+  &.-slide3 {
+    @extend .bg-cover;
+    color: $white;
+    text-shadow: 2px 2px 4px $black;
+    background-image: url('../../images/slide3.jpg');
+  }
+
+  &.-slide4 {
+    @extend .bg-cover;
+    color: $white;
+    text-shadow: 2px 2px 4px $black;
+    background-image: url('../../images/slide4.jpg');
+  }
+
+}
+
+/* Custom pagination bullets */
+.swiper-pagination {
+  margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  width: rem(15);
+  height: rem(15);
+  text-align: center;
+  line-height: rem(15);
+  font-size: rem(11);
+  color: $white;
+  opacity: 1;
+  background: rgba(0,0,0,0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: $white;
+  background: $secondary;
+}
+
+/* Custom Navigation Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  transition: all .5s;
+  background: none;
+  color: lighten($secondary, 5%);
+  text-shadow: 2px 3px 5px black;
+  width: auto;
+  height: auto;
+  font-size: rem(40);
+}
+
+.swiper-button-prev {
+  left: 0;
+
+  &:hover {
+    opacity: 0.6;
+    transform: translateX(-5px);
+  }
+
+}
+
+.swiper-button-next {
+  right: 0;
+
+  &:hover {
+    opacity: 0.6;
+    transform: translateX(5px);
+  }
+
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.2;
+}
+
+/************************** MEDIA QUERIES **************************/
+@include media('TABLETS', min) {
+
+  .swiper-container {
+    height: 680px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-size: rem(70);
+  }
+
+}

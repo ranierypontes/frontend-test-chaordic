@@ -64,13 +64,18 @@
   <!-- main -->
   <main class="main">
 
-    <section class="section">
-      <div class="container" style="border: 1px solid black;">
+    <section class="section -intro">
+      <div class="container-fluid">
         <div class="row">
-          <!-- Swiper -->
+          <!-- Swiper Slide -->
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide -slide1">
+                <div class="section-header">
+                  <h1 class="title -intro">Hello, world!</h1>
+                  <h3 class="subtitle -intro">Esta é uma sessão intro.</h3>
+                </div>
+              </div>
               <div class="swiper-slide">Slide 2</div>
               <div class="swiper-slide">Slide 3</div>
               <div class="swiper-slide">Slide 4</div>
@@ -79,53 +84,55 @@
             </div>
 
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination visible-xs"></div>
 
             <!-- Add Navigation -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev icon-leftarrow-before hidden-xs"></div>
+            <div class="swiper-button-next icon-rightarrow-before hidden-xs"></div>
 
-          </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-    <!-- scripts -->
-    <script src="./scripts/vendors.min.js"></script>
-    <script src="./scripts/scripts.js"></script>
+  <!-- scripts -->
+  <script src="./scripts/vendors.min.js"></script>
+  <script src="./scripts/scripts.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        prevButton: '.swiper-button-prev',
-        nextButton: '.swiper-button-next',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        paginationBulletRender: function (swiper, index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-        slidesPerView: 3,
-        spaceBetween: 30,
-        // centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false,
-        breakpoints: {
-          992: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 10
-          },
-          576: {
-            slidesPerView: 1,
-            spaceBetween: 0
-          }
-        }
-      });
-    </script>
-  </body>
-  </html>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: 6000,
+      speed: 800,
+      autoplayDisableOnInteraction: false,
+      loop: true,
+      effect: 'fade',
+      prevButton: '.swiper-button-prev',
+      nextButton: '.swiper-button-next',
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      // paginationBulletRender: function (swiper, index, className) {
+      //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+      // },
+      // breakpoints: {
+      //   992: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 20
+      //   },
+      //   768: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 10
+      //   },
+      //   576: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 0
+      //   }
+      // }
+    });
+  </script>
+</body>
+</html>

@@ -12,9 +12,8 @@
 
   /* Variants */
   &.-intro {
-    padding: rem(165 0);
+    padding: rem(0);
     overflow: hidden;
-    color: $black;
     background-color: $white;
   }
 
@@ -34,10 +33,6 @@
     padding: rem(70 0);
 
     /* Variants */
-    &.-intro{
-      padding: rem(170 0);
-    }
-
     &.-othersection{
       padding: rem(70 0);
     }
@@ -52,10 +47,6 @@
     padding: rem(80 0);
 
     /* Variants */
-    &.-intro{
-      padding: rem(175 0);
-    }
-
     &.-othersection{
       padding: rem(80 0);
     }
@@ -68,12 +59,6 @@
 
   .section {
     padding: rem(90 0);
-
-    /* Variants */
-    &.-intro{
-      padding: rem(165 0);
-    }
-
   }
 
 }
