@@ -66,43 +66,37 @@
     <section class="section -intro">
       <div class="container-fluid">
         <div class="row">
-          <!-- Swiper Slide -->
-          <div class="swiper-container">
+
+          <!-- Slide Intro -->
+          <div class="swiper-container slide-container-intro" data-module="SlideIntro">
             <div class="swiper-wrapper">
-              <div class="swiper-slide -slide1">
+              <div class="swiper-slide slide-intro -slide1">
                 <div class="section-header">
                   <h1 class="title -intro">Hello, world!</h1>
                   <h3 class="subtitle -intro">Esta é uma sessão intro.</h3>
                 </div>
               </div>
-              <div class="swiper-slide -slide2">
+              <div class="swiper-slide slide-intro -slide2">
                 <div class="section-header">
                   <h3 class="subtitle -intro">Este é o slide 2.</h3>
-                  <button class="button">Botão default</button>
                 </div>
               </div>
-              <div class="swiper-slide -slide3">
+              <div class="swiper-slide slide-intro -slide3">
                 <div class="section-header">
                   <h3 class="subtitle -intro">Este é o slide 3.</h3>
                 </div>
               </div>
-              <div class="swiper-slide -slide4">
+              <div class="swiper-slide slide-intro -slide4">
                 <div class="section-header">
                   <h3 class="subtitle -intro">Este é o slide 4.</h3>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
             </div>
-
-            <!-- Add Pagination -->
-            <div class="swiper-pagination visible-xs"></div>
-
-            <!-- Add Navigation -->
-            <div class="swiper-button-prev icon-leftarrow-before hidden-xs"></div>
-            <div class="swiper-button-next icon-rightarrow-before hidden-xs"></div>
-
+            <div class="swiper-pagination slide-pagination-intro visible-xs"></div>
+            <div class="swiper-button-prev slide-prev-intro icon-leftarrow-before hidden-xs"></div>
+            <div class="swiper-button-next slide-next-intro icon-rightarrow-before hidden-xs"></div>
           </div>
+
         </div>
       </div>
     </section>
@@ -275,7 +269,7 @@
   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD2FVoJ9W4ZNVNumP5zNuI3htOzL3xY1ts"></script>
 
   <!-- Initialize Swiper -->
-  <script>
+  <!-- <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -283,30 +277,30 @@
       speed: 800,
       autoplayDisableOnInteraction: false,
       loop: true,
-      effect: 'fade',
+      // effect: 'fade',
       prevButton: '.swiper-button-prev',
       nextButton: '.swiper-button-next',
       pagination: '.swiper-pagination',
       paginationClickable: true,
       // paginationBulletRender: function (swiper, index, className) {
-      //   return '<span class="' + className + '">' + (index + 1) + '</span>';
-      // },
-      // breakpoints: {
-      //   992: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 20
-      //   },
-      //   768: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 10
-      //   },
-      //   576: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 0
-      //   }
-      // }
-    });
-  </script>
+        //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+        // },
+        // breakpoints: {
+          //   992: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 20
+            //   },
+            //   768: {
+              //     slidesPerView: 2,
+              //     spaceBetween: 10
+              //   },
+              //   576: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 0
+                //   }
+                // }
+              });
+            </script> -->
 
-</body>
-</html>
+          </body>
+          </html>

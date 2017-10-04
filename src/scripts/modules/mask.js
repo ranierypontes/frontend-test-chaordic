@@ -1,4 +1,5 @@
 class Mask {
+
   constructor() {
     console.log('>>> Mask constructor');
 

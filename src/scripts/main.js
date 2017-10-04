@@ -1,9 +1,11 @@
 import Common from './modules/common';
 import Menu from './modules/menu';
 import Map from './modules/map';
+import SlideIntro from './modules/slide-intro';
+// import SlideAnother from './modules/slide-another';
 // import MapGetPosition from './modules/mapGetPosition';
 
-const availableModules = { Common, Menu, Map };
+const availableModules = { Common, Menu, Map, SlideIntro};
 
 window.modules = {};
 
