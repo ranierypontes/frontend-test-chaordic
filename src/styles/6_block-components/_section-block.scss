@@ -5,60 +5,19 @@
 // Mobile First
 .section {
   width: 100%;
-  height: auto;
-  padding: rem(60 0);
+  padding: rem(70 0);
+  overflow: hidden;
   color: lighten($black, 20%);
-  background-color: darken($white, 5%);
+  background-color: $white;
 
-  /* Variants */
   &.-intro {
-    padding: rem(0);
-    overflow: hidden;
-    background-color: $white;
+    padding: 0;
   }
 
   &.-othersection {
-    padding: rem(60 0);
+    @include flex-align(center);
     color: $white;
     background-color: $primary;
-  }
-
-}
-
-/************************** MEDIA QUERIES **************************/
-
-@include media_only('LARGE_PHONES') {
-
-  .section {
-    padding: rem(70 0);
-
-    /* Variants */
-    &.-othersection{
-      padding: rem(70 0);
-    }
-
-  }
-
-}
-
-@include media_only('TABLETS') {
-
-  .section {
-    padding: rem(80 0);
-
-    /* Variants */
-    &.-othersection{
-      padding: rem(80 0);
-    }
-
-  }
-
-}
-
-@include media('DESKTOPS', min) {
-
-  .section {
-    padding: rem(90 0);
   }
 
 }

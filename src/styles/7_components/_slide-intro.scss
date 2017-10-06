@@ -8,61 +8,48 @@
 .slide-container-intro {
   @extend .swiper-container;
   width: 100%;
-  height: 580px;
+  height: rem(580);
 
   .slide-intro {
     @extend .swiper-slide;
-    background-color: $secondary;
+    background-color: $white;
     text-align: center;
-
-    // Center slide text vertically
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    @include flex-align(center);
   }
 
   .slide-intro.-slide1 {
-    color: $primary;
+    color: $black;
   }
 
   .slide-intro.-slide2 {
-    color: $primary;
+    color: $black;
   }
 
   .slide-intro.-slide3 {
-    color: $primary;
+    color: $black;
   }
 
   .slide-intro.-slide4 {
-    color: $primary;
+    color: $black;
   }
 
   /* Custom pagination bullets */
   .slide-pagination-intro {
     @extend .swiper-pagination;
-    margin-bottom: 80px;
+    margin-bottom: rem(60);
   }
 
   .slide-pagination-bullet-intro {
     @extend .swiper-pagination-bullet;
-    width: rem(22);
-    height: rem(22);
+    width: rem(18);
+    height: rem(18);
     text-align: center;
-    line-height: rem(22);
+    line-height: rem(18);
     font-size: rem(12);
     color: $white;
     opacity: 1;
     background: rgba(0,0,0,0.2);
-    margin: rem(0 4);
+    margin: rem(0 10);
   }
 
   .slide-pagination-bullet-intro:first-child {
@@ -131,7 +118,7 @@
 @include media('TABLETS', min) {
 
   .slide-container-intro {
-    height: 680px;
+    height: rem(495);
 
     .slide-prev-intro,
     .slide-next-intro {

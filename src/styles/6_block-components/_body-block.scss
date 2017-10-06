@@ -4,7 +4,7 @@
 
 // Mobile First
 .body {
-  // margin-top: rem(70);
+  margin-top: rem(0);
 }
 
 /************************** MEDIA QUERIES **************************/
@@ -12,7 +12,7 @@
 @include media('DESKTOPS', min){
 
   .body {
-    // margin-top: rem(80);
+    margin-top: rem(80);
   }
 
 }

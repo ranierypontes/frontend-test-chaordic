@@ -5,7 +5,7 @@ import SlideIntro from './modules/slide-intro';
 // import SlideAnother from './modules/slide-another';
 // import MapGetPosition from './modules/mapGetPosition';
 
-const availableModules = { Common, Menu, Map, SlideIntro};
+const availableModules = { Common, Menu, Map, SlideIntro };
 
 window.modules = {};
 
