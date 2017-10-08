@@ -1,11 +1,11 @@
-import Mask from './mask';
+// import Mask from './mask';
 
 class Common {
   constructor() {
     console.log('>>> Common constructor');
 
     // Instance imports
-    new Mask();
+    // new Mask();
 
     // Call methods
     this.fixedI10();

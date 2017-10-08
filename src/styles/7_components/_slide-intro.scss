@@ -36,6 +36,7 @@
   /* Custom pagination bullets */
   .slide-pagination-intro {
     @extend .swiper-pagination;
+    @extend .visible-xs;
     margin-bottom: rem(60);
   }
 
@@ -69,6 +70,7 @@
   /* Custom Navigation Arrows */
   .slide-prev-intro,
   .slide-next-intro {
+    @extend .hidden-xs;
     transition: all .5s;
     background: none;
     color: lighten($primary, 5%);
