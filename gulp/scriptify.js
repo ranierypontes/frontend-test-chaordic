@@ -14,7 +14,7 @@ const scripts = watchify(browserify(Object.assign({}, watchify.args, {
 
 // add transformations here
 // i.e. b.transform(coffeeify);
-scripts.transform(babelify, {presets: ["es2015", "react"]});
+scripts.transform(babelify, {presets: ["env"]});
 
 gulp.task('scriptify', scriptify); // so you can run `gulp js` to build the file
 scripts.on('update', scriptify); // on any dep update, runs the bundler
