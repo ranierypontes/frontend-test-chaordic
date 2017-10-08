@@ -1,5 +1,5 @@
-# BRZ Boilerplate
-HTML5 Twitter Bootstrap 3 Boilerplate with Gulp and ES2015 modules
+# Front-End Boilerplate
+HTML5/Bootstrap 3 Boilerplate with Gulp and ES6 modules
 
 ### How to use
 

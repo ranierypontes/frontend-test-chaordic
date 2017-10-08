@@ -1,10 +1,9 @@
 {
-    "name": "brz-boilerplate",
-    "description": "HTML5 Twitter Bootstrap 3 Boilerplate with Gulp and ES2015 modules",
+    "name": "frontend-boilerplate",
+    "description": "HTML5/Bootstrap 3 Boilerplate with Gulp and ES6 modules",
     "main": "src/index.html",
     "keywords": [
         "html5",
-        "twitter",
         "bootstrap",
         "boilerplate",
         "gulp",
@@ -16,12 +15,11 @@
         "jquery"
     ],
     "authors": [
-        "João Paulo Barbosa Neto <jpaulobneto@gmail.com>",
-        "Hugo Fabriicio <me@hugofabricio.com>"
+        "Raniery Pontes <pontesraniery@gmail.com>"
     ],
     "license": "MIT",
     "moduleType": "globals",
-    "homepage": "https://github.com/brz-digital/brz-boilerplate",
+    "homepage": "https://bitbucket.org/ranierypontes/config-front-end-boilerplate-construcao",
     "ignore": [
         "**/.*",
         "node_modules",
