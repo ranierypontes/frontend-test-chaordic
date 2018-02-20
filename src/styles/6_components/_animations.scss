@@ -1,0 +1,115 @@
+// ANIMATIONS
+// Manipuled by Javascript
+
+/////////////////////// MENU ANIMATIONS ///////////////////////
+
+// Header Menu animation
+@include media('DESKTOPS', max) {
+
+  .header-menu {
+    visibility: hidden;
+    opacity: 0.7;
+    transition: opacity 0.8s, visibility 0.5s, transform 0.5s;
+
+    &.-open {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(rem(-300));
+      transition: opacity 0.8s, visibility 0.5s, transform 0.5s;
+    }
+
+  }
+
+}
+
+// Menu Toggle animation
+@include media('DESKTOPS', max) {
+
+  .header-toggle {
+
+    .menu-toggle.-open {
+
+      .bar {
+        background: transparent;
+        transition: all 0.3s;
+      }
+
+      .bar:before {
+        transform: rotate(45deg) translate(6px, 7px);
+        transition: transform 0.5s;
+      }
+
+      .bar:after {
+        transform: rotate(-45deg) translate(6px, -7px);
+        transition: transform 0.5s;
+      }
+
+    }
+
+    .menu-toggle.-small {
+      width: 28px;
+      transition: all 0.4s;
+
+    }
+
+  }
+
+}
+
+/////////////////////////// MODAL ANIMATIONS ///////////////////////////
+
+/////////// Magnific Popup's Modals...
+
+// // overlay at start
+// .modal-anim.mfp-bg {
+//   opacity: 0;
+
+//   -webkit-transition: all 0.6s ease-out;
+//   -moz-transition: all 0.6s ease-out;
+//   transition: all 0.6s ease-out;
+// }
+// // overlay animate in
+// .modal-anim.mfp-bg.mfp-ready {
+//   opacity: 0.6;
+// }
+// // overlay animate out
+// .modal-anim.mfp-bg.mfp-removing {
+//   opacity: 0;
+
+//   -webkit-transition: all 0.4s ease-out;
+//   -moz-transition: all 0.4s ease-out;
+//   transition: all 0.4s ease-out;
+// }
+
+// // content at start
+// .modal-anim.mfp-wrap .mfp-content {
+//   opacity: 0;
+
+//   -webkit-transition: all 0.8s ease-out;
+//   -moz-transition: all 0.8s ease-out;
+//   transition: all 0.8s ease-out;
+// }
+// // content animate it
+// .modal-anim.mfp-wrap.mfp-ready .mfp-content {
+//   opacity: 1;
+// }
+// // content animate out
+// .modal-anim.mfp-wrap.mfp-removing .mfp-content {
+//   opacity: 0;
+
+//   -webkit-transition: all 0.4s ease-out;
+//   -moz-transition: all 0.4s ease-out;
+//   transition: all 0.4s ease-out;
+// }
+
+/////////////////////////// OTHERS ///////////////////////////
+
+// Button Page Scroll animation
+.page-scroll > .btn-roll.-move {
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  50% {transform: translateY(-20px);}
+  100% {transform: translateY(0px);}
+}

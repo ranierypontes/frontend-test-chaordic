@@ -1,16 +1,13 @@
-/**
-* BUTTONS
-*/
+// BUTTONS
 
-/* Button Default */
+// Button Default
 .button {
   @extend .btn;
   background-color: $gray;
   color: $white;
-  border-radius: rem(4);
+  border-radius: 0;
 
   &:hover, &:focus, &:active {
     color: $white;
-    background-color: darken($gray, 10%);
   }
 }

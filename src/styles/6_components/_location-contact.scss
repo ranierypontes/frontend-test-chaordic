@@ -1,0 +1,79 @@
+// LOCATION ADDRESS
+
+.location-contact {
+  @include flex($flex-direction: column, $justify-content: space-around, $align-items: stretch);
+  padding: rem(30 40);
+  background-color: $lightblack;
+  border-radius: rem(10 0 0 10);
+  color: darken($lightgray, 25%);
+
+  .icon {
+    color: $secondary;
+    margin-right: rem(5);
+  }
+
+  .title {
+    font-size: $fontsize-medium2;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: rem(10);
+    text-transform: uppercase;
+  }
+
+  > .location, > .contact {
+    @include flex($flex-direction: column, $justify-content: space-around, $align-items: stretch);
+  }
+
+  > .location > .address,
+  > .contact > .emailsend,
+  > .contact > .phonecall {
+    color: darken($lightgray, 25%);
+    font-size: $fontsize-small;
+  }
+
+  > .contact > .emailsend,
+  > .contact > .phonecall {
+    margin-bottom: rem(10);
+  }
+
+  > .contact > .schedules {
+    font-size: $fontsize-small2;
+  }
+
+}
+
+////////////////////////////////////////// MEDIA QUERIES
+@include media_only("LARGE_PHONES") {
+
+  .location-contact {
+    order: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: rem(25 15);
+    border-radius: rem(0 0 10 10);
+
+    > .location, > .contact {
+      flex: 1;
+      align-items: flex-start;
+    }
+
+  }
+
+}
+
+@include media("PHONES", max) {
+
+  .location-contact {
+    order: 1;
+    flex-direction: column;
+    padding: rem(25 15);
+    border-radius: rem(0 0 10 10);
+
+    > .location, > .contact {
+      flex: 1;
+      align-items: flex-start;
+    }
+
+  }
+
+}

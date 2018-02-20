@@ -1,0 +1,36 @@
+// SECTION BLOCK
+
+.section-block {
+  width: 100%;
+  overflow: hidden;
+  background-color: $white;
+
+  // Variants
+  &.-home {
+    position: fixed;
+    height: 100vh;
+  }
+
+  &.-aboutus {
+    @include container-section-custom($top:6, $bottom: 4);
+    position: relative;
+    top: 100vh;
+  }
+
+  &.-testimonials {
+    @include container-section-custom($top: 6, $bottom: 4);
+    position: relative;
+    top: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &.-location {
+    @include container-section-custom($top: 6, $bottom: 6);
+    position: relative;
+    top: 100vh;
+  }
+
+}

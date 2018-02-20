@@ -1,8 +1,6 @@
-/**
-* MEDIA QUERIES
-*/
+// MEDIA QUERIES
 
-// /************************************** Breakpoints ***************************************/
+// Breakpoints
 $breakpoints: (
 "PHONES":         576px,
 "TABLETS":        768px,
@@ -10,7 +8,7 @@ $breakpoints: (
 "LARGE_DESKTOPS": 1200px
 );
 
-// /********************************** Mixins Media Queries **********************************/
+/////////////////////////////////////// MIXINS
 
 // Custom media query
 // Recebe 'device' e valor 'max' ou 'min'
@@ -26,6 +24,7 @@ $breakpoints: (
   }
 }
 
+// Only media query
 // Delimita media query para único device
 @mixin media_only($device : "TABLETS"){
 

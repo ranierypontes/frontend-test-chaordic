@@ -1,0 +1,112 @@
+// SECTION HEADER
+
+.section-header {
+  @include flex($flex-direction: column);
+
+  > .section-title {
+    @include flex($justify-content: space-around);
+    text-align: center;
+    width: 100%;
+  }
+
+  > .section-title > .title {
+    position: relative;
+    font-weight: bold;
+    font-size: $fontsize-large;
+    color: $lightblack;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    margin: rem(0 20);
+  }
+
+  > .section-title > .title.-white {
+    color: $white;
+  }
+
+  > .section-title > .title.-lightgray {
+    color: $lightgray;
+  }
+
+  > .section-title > .title.-capitalize {
+    text-transform: capitalize;
+  }
+
+  > .section-title > .line {
+    @extend .visible-lg;
+    @extend .visible-md;
+    border: rem(0.5) solid transparentize($primary, 0.60);
+    background-color: transparentize($primary, 0.60);
+    flex-grow: 1;
+    height: rem(0.5);
+    border-radius: rem(10);
+  }
+
+  > .section-title > .line.-black {
+    border-color: $lightblack;
+    background-color: $lightblack;
+  }
+
+  > .section-title > .line.-lightgray {
+    border-color: $lightgray;
+    background-color: $lightgray;
+  }
+
+  > .icon {
+    font-size: $fontsize-medium;
+    line-height: 0;
+    padding-top: rem(5);
+    margin-bottom: rem(10);
+    color: $primary;
+  }
+
+  // Section Header variants
+  &.-rightline {
+    flex-direction: row;
+
+    > .section-title {
+      flex: 1;
+    }
+
+    > .section-title > .title {
+      margin-left: rem(10);
+      margin-right: rem(20);
+      text-align: left;
+    }
+
+    > .icon {
+      margin: unset;
+    }
+
+  }
+
+  // Section Header container variants
+  &.-container {
+    @include container-custom();
+  }
+
+}
+
+///////////////////////////////////// MEDIA QUERIES
+@include media("DESKTOPS", max) {
+
+  .section-header {
+
+    > .section-title > .title {
+      margin: rem(5 10);
+    }
+
+    // Variants
+    &.-rightline {
+      flex-direction: column;
+
+      > .section-title > .title {
+        margin: rem(10);
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}

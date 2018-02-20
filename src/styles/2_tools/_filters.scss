@@ -1,6 +1,4 @@
-/**
-* FILTERS
-*/
+// FILTERS
 
 @mixin filter($filter-type,$filter-amount) {
   -webkit-filter: $filter-type+unquote('(#{$filter-amount})');

@@ -1,6 +1,4 @@
-/**
-* TRANSITIONS
-*/
+// TRANSITIONS
 
 @mixin transition($prop, $values...) {
   -moz-#{$prop}: $values;

@@ -1,7 +1,7 @@
 class MapGetPosition {
 
   constructor() {
-    console.log('>>> MapGetPosition constructor');
+    console.log('>>> mapGetPosition.js ready!');
     // Call methods
     this.init();
   }

@@ -1,0 +1,29 @@
+// FOOTER-NOTE
+
+.footer-note {
+  color: $lightgray;
+  background-color: $black;
+  @include flex($flex-direction: column);
+  text-align: center;
+
+  > .copyright > .text {
+    font-size: $fontsize-small;
+    text-align: center;
+  }
+
+  > .developer {
+    margin-top: rem(10);
+  }
+
+  > .developer > .text {
+    font-size: $fontsize-small;
+  }
+
+  > .developer > .text > .link > .icon {
+    color: red;
+    line-height: 0;
+    margin-right: rem(5);
+    font-size: $fontsize-medium2;
+  }
+
+}

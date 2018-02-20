@@ -1,0 +1,43 @@
+// SECTION FOOTER
+
+.section-footer {
+  @include flex();
+  margin-top: rem(40);
+  text-align: center;
+
+  &.-nomargin {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  > .button {
+    @extend .button;
+    @include flex();
+    align-self: center;
+    font-size: $fontsize-small;
+    color: $white;
+    background-color: $secondary;
+    font-weight: bold;
+    border-radius: rem(30);
+    padding: rem(10 40);
+    border: rem(1) solid transparent;
+    text-transform: uppercase;
+  }
+
+  > .button.-black {
+    background-color: $lightblack;
+    color: $white;
+  }
+
+  > .button:hover, .button:focus, > .button.-black:hover, .button.-black:focus {
+    background-color: darken($secondary, 10%);
+    color: darken($white, 10%);
+  }
+
+  > .button > .icon {
+    font-size: $fontsize-medium2;
+    line-height: 0;
+    margin-right: rem(10);
+  }
+
+}

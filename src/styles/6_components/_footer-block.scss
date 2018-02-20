@@ -1,0 +1,25 @@
+// FOOTER BLOCK
+
+.footer-block {
+  position: relative;
+  top: 100vh;
+  color: $white;
+  background-color: $lightblack;
+
+  > .footer-logo {
+    @include container-custom($top: 5, $bottom: 0);
+  }
+
+  > .footer-menu {
+    @include container-custom($top: 2, $bottom: 2);
+  }
+
+  > .footer-social {
+    @include container-custom($top: 0, $bottom: 6);
+  }
+
+  > .footer-note {
+    @include container-custom($top: 2, $bottom: 1);
+  }
+
+}

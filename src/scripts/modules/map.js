@@ -1,7 +1,7 @@
 class Map {
 
   constructor() {
-    console.log('>>> Map constructor');
+    console.log('>>> map.js ready!');
     // Call methods
     this.initializeMap();
   }

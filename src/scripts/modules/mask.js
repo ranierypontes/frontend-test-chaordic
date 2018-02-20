@@ -1,7 +1,7 @@
 class Mask {
 
   constructor() {
-    console.log('>>> Mask constructor');
+    console.log('>>> mask.js ready!');
 
     // Call methods
     this.init();

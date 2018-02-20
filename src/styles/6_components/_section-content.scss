@@ -1,0 +1,60 @@
+// SECTION CONTENT
+
+.section-content {
+  margin: rem(20 0);
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  > .subtitle {
+    font-size: $fontsize-medium2;
+    font-weight: normal;
+    color: $black;
+    text-align: center;
+    margin-bottom: rem(40);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  > .subtitle.-center {
+    color: $white;
+  }
+
+  > .subtitle.-white {
+    color: $white;
+  }
+
+  > .subtitle.-lightgray {
+    color: $lightgray;
+  }
+
+  > .paragraph {
+    font-size: $fontsize-small;
+    font-weight: normal;
+    color: $black;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  // Variants
+  &.-stretch {
+    @include flex($align-items: stretch);
+  }
+
+}
+
+///////////////////////////////////// MEDIA QUERIES
+
+@include media("TABLETS", max) {
+
+  .section-content {
+    margin-top: rem(30);
+
+    &.-stretch {
+      flex-direction: column;
+    }
+
+  }
+
+}

@@ -1,14 +1,56 @@
-/**
-* FONTS
-*/
+// FONTS
 
 $fontastic: 'boilerplate-icons';
+$opensans: 'OpenSans-Regular';
+$opensansItalic: 'OpenSans-Italic';
+$opensansBold: 'OpenSans-Bold';
+$opensansBoldItalic: 'OpenSans-BoldItalic';
+$roboto: 'Roboto-Regular';
+$robotoItalic: 'Roboto-Italic';
+$robotoBold: 'Roboto-Bold';
+$robotoBoldItalic: 'Roboto-BoldItalic';
 
-/* Fontastic boilerplate icons*/
+/* Fontastic Icons*/
 @include font-face(
   $fontastic,
   "../fonts/fontastic/#{$fontastic}",
   normal,
   normal,
   eot woff ttf svg
+);
+
+/* Open Sans Regular*/
+@include font-face(
+  $opensans,
+  "../fonts/opensans/#{$opensans}",
+  normal,
+  normal,
+  ttf
+);
+
+/* Open Sans Italic*/
+@include font-face(
+  $opensansItalic,
+  "../fonts/opensans/#{$opensansItalic}",
+  normal,
+  italic,
+  ttf
+);
+
+/* Open Sans Bold*/
+@include font-face(
+  $opensansBold,
+  "../fonts/opensans/#{$opensansBold}",
+  bold,
+  normal,
+  ttf
+);
+
+/* Open Sans Bold Italic*/
+@include font-face(
+  $opensansBoldItalic,
+  "../fonts/opensans/#{$opensansBoldItalic}",
+  bold,
+  italic,
+  ttf
 );

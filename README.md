@@ -1,5 +1,5 @@
-# Front-End Boilerplate
-HTML5/Bootstrap 3 Boilerplate with Gulp and ES6 modules
+# Site Império Vidros
+Made with HTML5/Bootstrap 3 Boilerplate with Gulp and ES6 modules.
 
 ### How to use
 

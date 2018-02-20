@@ -1,0 +1,73 @@
+// GOOGLE MAP
+
+.google-map {
+  @include flex($align-items: stretch, $justify-content: flex-start);
+  flex: 1;
+  height: rem(400);
+  position: relative;
+  border-radius: rem(0 10 10 0);
+
+  > .map {
+    width: 100%;
+    height: 100%;
+    border-radius: rem(0 10 10 0);
+  }
+
+  > .btnmap {
+    @include flex();
+    @extend .button;
+    position: absolute;
+    text-transform: uppercase;
+    margin: rem(50);
+    border-radius: rem(30);
+    padding: rem(10 20);
+    font-weight: bold;
+    color: $white;
+    background-color: $secondary;
+  }
+
+  > .btnmap:focus, .btnmap:active {
+    background-color: darken($secondary, 10%);
+  }
+
+  > .btnmap > .icon, > .btnmap > .text {
+    font-size: $fontsize-small;
+  }
+
+  > .btnmap > .text {
+    margin-left: rem(10);
+  }
+
+}
+
+/////////////////////////////////////// MEDIA QUERIES
+@include media_only('TABLETS') {
+
+  .google-map {
+    width: 100%;
+    height: rem(350);
+  }
+
+}
+
+@include media('TABLETS', max) {
+
+  .google-map {
+    order: -1;
+    width: 100%;
+    height: rem(300);
+    justify-content: center;
+    align-items: flex-end;
+
+    > .map {
+      border-radius: 0;
+    }
+
+    > .btnmap {
+      margin: unset;
+      bottom: rem(40);
+    }
+
+  }
+
+}

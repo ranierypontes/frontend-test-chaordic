@@ -1,3 +1,5 @@
+// Only 'px to rem' import (Necessary to typography variables settings)
+@import "2_tools/px_to_rem";
 // Settings
 @import "1_settings/*";
 // Tools
@@ -8,11 +10,7 @@
 @import "4_base/*";
 // Objects
 @import "5_objects/*";
-// Block Components
-@import "6_block-components/*";
 // Components
-@import "7_components/*";
-// Animations
-@import "8_animations/*";
+@import "6_components/*";
 // Helpers
-@import "9_helpers/*";
+@import "7_helpers/*";

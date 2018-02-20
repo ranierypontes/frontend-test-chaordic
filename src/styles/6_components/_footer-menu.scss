@@ -1,0 +1,58 @@
+// FOOTER MENU
+
+.footer-menu {
+  @include flex();
+
+  > .list {
+    @include flex();
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  >.list > .item {
+    margin: rem(0 15);
+    padding: 0;
+  }
+
+  >.list > .item > .link {
+    color: $lightgray;
+    font-weight: bold;
+    font-size: $fontsize-small;
+  }
+
+  > .list > .item > .link:hover {
+    color: $primary;
+  }
+
+}
+
+//////////////////////////////////////// MEDIA QUERIES
+@include media_only("TABLETS") {
+
+  .footer-menu {
+
+    >.list > .item {
+      margin: rem(0 5);
+    }
+
+  }
+
+}
+
+@include media("TABLETS", max) {
+
+  .footer-menu {
+
+    >.list {
+      flex-direction: column;
+    }
+
+    >.list > .item {
+      margin: rem(5 0);
+    }
+
+  }
+
+}
