@@ -49,7 +49,7 @@
     "gulp-cache": "^0.4.5",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
-    "gulp-css-globbing": "^0.1.8",
+    "gulp-css-globbing": "^0.2.2",
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
