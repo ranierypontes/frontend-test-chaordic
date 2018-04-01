@@ -23,6 +23,9 @@ gulp.task('vendors', () => {
 
         // Swiper
         `${cons.vendor}/swiper/dist/js/swiper.jquery.js`
+
+        // Axios
+        `${cons.vendor}/axios/dist/axios.js`
     ])
     .pipe(cons.$.newer(`${cons.tmp}/scripts`))
     .pipe(cons.$.sourcemaps.init())
