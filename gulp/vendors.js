@@ -22,7 +22,7 @@ gulp.task('vendors', () => {
         // `${cons.vendor}/magnific-popup/dist/jquery.magnific-popup.js`,
 
         // Swiper
-        `${cons.vendor}/swiper/dist/js/swiper.jquery.js`
+        `${cons.vendor}/swiper/dist/js/swiper.jquery.js`,
 
         // Axios
         `${cons.vendor}/axios/dist/axios.js`
