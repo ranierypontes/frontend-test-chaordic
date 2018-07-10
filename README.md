@@ -1,4 +1,4 @@
-# Site Império Vidros
+# Front-end test for Chaordic
 Made with HTML5/Bootstrap 3 Boilerplate with Gulp and ES6 modules.
 
 ### How to use
