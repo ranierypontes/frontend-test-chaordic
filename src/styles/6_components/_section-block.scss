@@ -6,9 +6,26 @@
   @include flex($flex-direction: column);
   background-color: $white;
 
+  > .title {
+    font-weight: bold;
+    font-size: $fontsize-large;
+    color: $primary;
+  }
+
+  > .title.-white {
+    color: $white;
+  }
+
+  > .paragraph {
+    margin-top: 10px;
+    text-align: center;
+    color: $white;
+    font-size: $fontsize-small2;
+  }
+
   // Variants
   &.-home {
-    height: 90vh;
+    height: 460px;
     @include container-custom();
     @extend .bg-cover;
     background-image: url('../../images/background-home.jpg');
@@ -16,14 +33,16 @@
   }
 
   &.-top5 {
-    @include container-custom($top: 4, $bottom: 4);
-    // @include border-test();
+    @include container-custom();
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &.-hits {
-    @include container-custom($top: 4, $bottom: 4);
+    @include container-custom();
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $third;
-    // @include border-test();
   }
 
 }

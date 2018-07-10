@@ -1,0 +1,34 @@
+// HITS-BOX
+
+.hits-box {
+  margin-top: 25px;
+  text-align: center;
+
+  > .input {
+    font-family: $opensansBold;
+    text-align: center;
+    width: 170px;
+    font-size: $fontsize-large2;
+    color: $primary;
+  }
+
+  > .paragraph {
+    color: $secondary;
+    margin-top: 8px;
+    font-size: $fontsize-small2;
+  }
+
+}
+
+// MEDIA QUERIES
+@include media("TABLETS", max) {
+
+  .hits-box {
+
+    > .input {
+      width: 130px;
+    }
+
+  }
+
+}

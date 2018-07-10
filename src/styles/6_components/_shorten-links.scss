@@ -1,0 +1,81 @@
+// SHORTEN-LINKS
+
+.shorten-links {
+  margin-top: 35px;
+  @include flex();
+  width: 45%;
+
+  > .inputbox {
+    position: relative;
+    align-self: flex-end;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  > .inputbox > .input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #FF6A00;
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: 5px;
+    @include placeholder-color(#FF6A00);
+    color: #FF6A00;
+    font-size: $fontsize-small2;
+    text-align: left;
+    outline: none;
+  }
+
+  > .inputbox > .input::after {
+    font-family: $fontastic;
+    position: absolute;
+    content: 'F';
+    top: 0;
+    right: 0;
+    font-size: $fontsize-large;
+    color: $white;
+  }
+
+  // > .inputbox > .icon {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   color: $white;
+  // }
+
+  > .btn {
+    @extend .button;
+    text-transform: uppercase;
+    color: $white;
+    background-color: #FF6A00;
+    font-weight: bold;
+    font-size: $fontsize-small2;
+  }
+
+}
+
+// MEDIA QUERIES
+@include media_only("TABLETS") {
+
+  .shorten-links {
+    width: 50%;
+  }
+
+}
+
+@include media_only("LARGE_PHONES") {
+
+  .shorten-links {
+    width: 70%;
+  }
+
+}
+
+@include media("PHONES", max) {
+
+  .shorten-links {
+    width: 100%;
+  }
+
+}

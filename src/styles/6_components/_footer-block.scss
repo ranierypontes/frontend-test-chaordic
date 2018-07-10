@@ -3,9 +3,10 @@
 .footer-block {
   color: $lightblack;
   background-color: $white;
-  @include container-custom(2, 2);
+  @include container-custom();
+  padding-top: 25px;
+  padding-bottom: 25px;
   @include flex($justify-content: space-between);
-  // @include border-test();
 
   > .link {
     color: $primary;

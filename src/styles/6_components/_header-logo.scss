@@ -18,20 +18,3 @@
   }
 
 }
-
-///////////////////////////////////////// MEDIA QUERIES
-@include media('DESKTOPS', max) {
-
-  .header-logo {
-
-    .logo {
-      width: rem(140);
-    }
-
-    .logo.-small {
-      width: rem(120);
-    }
-
-  }
-
-}

@@ -2,7 +2,7 @@
 
 .header-block {
   @include flex();
-  height: 10vh;
+  height: 50px;
   z-index: 1000;
   background-color: $white;
 }
