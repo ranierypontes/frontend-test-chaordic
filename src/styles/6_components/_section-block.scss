@@ -3,34 +3,27 @@
 .section-block {
   width: 100%;
   overflow: hidden;
+  @include flex($flex-direction: column);
   background-color: $white;
 
   // Variants
   &.-home {
-    position: fixed;
-    height: 100vh;
+    height: 90vh;
+    @include container-custom();
+    @extend .bg-cover;
+    background-image: url('../../images/background-home.jpg');
+    background-color: $primary;
   }
 
-  &.-aboutus {
-    @include container-section-custom($top:6, $bottom: 4);
-    position: relative;
-    top: 100vh;
+  &.-top5 {
+    @include container-custom($top: 4, $bottom: 4);
+    // @include border-test();
   }
 
-  &.-testimonials {
-    @include container-section-custom($top: 6, $bottom: 4);
-    position: relative;
-    top: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  &.-location {
-    @include container-section-custom($top: 6, $bottom: 6);
-    position: relative;
-    top: 100vh;
+  &.-hits {
+    @include container-custom($top: 4, $bottom: 4);
+    background-color: $third;
+    // @include border-test();
   }
 
 }

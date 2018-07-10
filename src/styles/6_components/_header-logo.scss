@@ -3,24 +3,12 @@
 .header-logo {
 
   .logo {
-    margin-top: -8px;
-    width: rem(160);
-    opacity: 1;
-    fill: $white;
+    margin-top: 8px;
     transition: all 0.4s;
   }
 
   .logo:hover {
     opacity: 0.8;
-  }
-
-  .logo .star {
-    fill: $primary;
-  }
-
-  .logo .shadowstar {
-    fill: $black;
-    stroke: $black;
   }
 
   // Variants (animation)
@@ -37,7 +25,6 @@
   .header-logo {
 
     .logo {
-      margin-top: unset;
       width: rem(140);
     }
 

@@ -1,13 +1,8 @@
 // HEADER BLOCK
 
 .header-block {
-  @include flex($justify-content: space-between);
-  @include container-custom();
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: rem(80);
+  @include flex();
+  height: 10vh;
   z-index: 1000;
-  background-color: $black;
+  background-color: $white;
 }

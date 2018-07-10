@@ -5,9 +5,9 @@
 ///////////////////////// Container Custom (Top&Bottom: Input | Right&Left: Variables)
 // Right&Left Variables
 $container-custom-xs-rightleft: 20;
-$container-custom-sm-rightleft: 25;
-$container-custom-md-rightleft: 60;
-$container-custom-rightleft: 100;
+$container-custom-sm-rightleft: 60;
+$container-custom-md-rightleft: 80;
+$container-custom-rightleft: 160;
 
 @mixin container-custom($top: 0, $bottom: 0) {
 

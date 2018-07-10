@@ -25,11 +25,11 @@
 
 <body data-module="Common">
 
-  <header id="header-block" class="header-block" data-module="HeaderNavBarMenu">
+  <header id="header-block" class="header-block">
 
     <div class="header-logo">
-      <a href="./index.html" data-container="link" data-link="home">
-        Logo
+      <a href="./index.html">
+        <img class="logo" src="./images/logo-chaordic.png" alt="Logo">
       </a>
     </div>
 
@@ -37,22 +37,64 @@
 
   <main>
 
-    <section class="section-block -home" data-container="home">
-      ENCURTE SEUS LINKS
+    <section class="section-block -home">
+      <h1 class="title">Encurte seus links.</h1>
+      <p class="paragraph">
+        Links são longos. Encurte os links que você deseja compartilhar,<br/>
+        e acompanhe enquanto viajam através da internet.
+      </p>
+      <form class="shorten-links" action="#">
+        <input class="input" type="text" placeholder="Cole o seu link aqui">
+        <button class="btn" type="submit">Encurtar</button>
+      </form>
     </section>
 
-    <section class="section-block -location" data-container="location">
-      TOP 5
+    <section class="section-block -top5">
+      <h3 class="title">TOP 5</h3>
+      <ul class="list-links">
+        <li class="item">
+          <a href="#" class="link">Link</a>
+          <span class="hits">823</span>
+        </li>
+        <li class="item">
+          <a href="#" class="link">Link</a>
+          <span class="hits">823</span>
+        </li>
+        <li>
+          <a href="#" class="link">Link</a>
+          <span class="hits">823</span>
+        </li>
+        <li class="item">
+          <a href="#" class="link">Link</a>
+          <span class="hits">823</span>
+        </li>
+        <li class="item">
+          <a href="#" class="link">Link</a>
+          <span class="hits">823</span>
+        </li>
+      </ul>
     </section>
 
-    <section class="section-block -location" data-container="location">
-      HITS
+    <section class="section-block -hits">
+      <h3 class="title">HITS</h3>
+      <div class="hits-box">
+        <input class="input" type="text" value="35.713.571" name="hits" readonly>
+        <p class="paragraph">Cliques em links.</p>
+      </div>
     </section>
 
   </main>
 
   <footer class="footer-block">
-    FOOTER
+    <a href="#" class="link">chr.dc</a>
+    <div class="social">
+      <a href="#" class="twitter">
+        <img src="./images/icon-twitter.png" alt="Twitter">
+      </a>
+      <a href="#" class="facebook">
+        <img src="./images/icon-facebook.png" alt="Facebook">
+      </a>
+    </div>
   </footer>
 
   <script src="./scripts/vendors.min.js"></script>
