@@ -1,14 +1,9 @@
 // FONTS
 
-$fontastic: 'boilerplate-icons';
-$opensans: 'OpenSans-Regular';
-$opensansItalic: 'OpenSans-Italic';
-$opensansBold: 'OpenSans-Bold';
-$opensansBoldItalic: 'OpenSans-BoldItalic';
+$fontastic: 'testfrontend-chaordic';
 $roboto: 'Roboto-Regular';
-$robotoItalic: 'Roboto-Italic';
-$robotoBold: 'Roboto-Bold';
-$robotoBoldItalic: 'Roboto-BoldItalic';
+$robotoSlab: 'RobotoSlab-Regular';
+$robotoSlabBold: 'RobotoSlab-Bold';
 
 /* Fontastic Icons*/
 @include font-face(
@@ -19,38 +14,30 @@ $robotoBoldItalic: 'Roboto-BoldItalic';
   eot woff ttf svg
 );
 
-/* Open Sans Regular*/
+/* Roboto Regular*/
 @include font-face(
-  $opensans,
-  "../fonts/opensans/#{$opensans}",
+  $roboto,
+  "../fonts/roboto/#{$roboto}",
   normal,
   normal,
   ttf
 );
 
-/* Open Sans Italic*/
+/* Roboto Slab Regular*/
 @include font-face(
-  $opensansItalic,
-  "../fonts/opensans/#{$opensansItalic}",
+  $robotoSlab,
+  "../fonts/roboto-slab/#{$robotoSlab}",
   normal,
-  italic,
-  ttf
-);
-
-/* Open Sans Bold*/
-@include font-face(
-  $opensansBold,
-  "../fonts/opensans/#{$opensansBold}",
-  bold,
   normal,
   ttf
 );
 
-/* Open Sans Bold Italic*/
+/* Roboto Slab Bold*/
 @include font-face(
-  $opensansBoldItalic,
-  "../fonts/opensans/#{$opensansBoldItalic}",
-  bold,
-  italic,
+  $robotoSlabBold,
+  "../fonts/roboto-slab/#{$robotoSlabBold}",
+  normal,
+  normal,
   ttf
 );
+

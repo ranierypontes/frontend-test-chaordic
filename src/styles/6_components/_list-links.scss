@@ -22,14 +22,14 @@
 
   > .item > .link {
     color: $primary;
-    font-weight: bold;
-    font-size: $fontsize-small2;
+    letter-spacing: 0.5px;
+    font-size: $size-6;
     margin-left: 0;
     margin-right: auto;
   }
 
   > .item > .hits {
-    font-size: $fontsize-small2;
+    font-size: $size-5;
     color: $secondary;
     margin-left: auto;
     margin-right: 0;

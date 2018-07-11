@@ -1,0 +1,18 @@
+// LOADING
+
+.loading {
+  margin-top: 40px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-left-color: $primary;
+  border-top-color: $primary;
+  border-radius: 50%;
+  animation: spinner 0.4s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

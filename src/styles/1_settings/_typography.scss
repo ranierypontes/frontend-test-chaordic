@@ -2,16 +2,15 @@
 
 // Font Size bases root (px)
 $fontsize-base-large: 17px;
-$fontsize-base-medium: 15px;
-$fontsize-base-small: 14px;
-$fontsize-base-extrasmall: 13px;
+$fontsize-base-medium: 16px;
+$fontsize-base-small: 15px;
+$fontsize-base-extrasmall: 14px;
 
 // Font Size variables responsive (rem)
-$fontsize-extralarge:  rem(60);
-$fontsize-extralarge2: rem(50);
-$fontsize-large:       rem(30);
-$fontsize-large2:      rem(26);
-$fontsize-medium:      rem(22);
-$fontsize-medium2:     rem(19);
-$fontsize-small:       rem(16);
-$fontsize-small2:      rem(14);
+$size-1: rem(42);
+$size-2: rem(32);
+$size-3: rem(24);
+$size-4: rem(18);
+$size-5: rem(16);
+$size-6: rem(15.5);
+$size-7: rem(15);

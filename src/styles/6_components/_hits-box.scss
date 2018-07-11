@@ -5,17 +5,19 @@
   text-align: center;
 
   > .input {
-    font-family: $opensansBold;
+    font-family: $robotoSlab;
     text-align: center;
-    width: 170px;
-    font-size: $fontsize-large2;
+    width: 180px;
+    font-size: $size-2;
     color: $primary;
+    border: 1px solid darken($third, 10%);
+    border-radius: 6px;
   }
 
   > .paragraph {
     color: $secondary;
     margin-top: 8px;
-    font-size: $fontsize-small2;
+    font-size: $size-7;
   }
 
 }
@@ -26,7 +28,7 @@
   .hits-box {
 
     > .input {
-      width: 130px;
+      width: 150px;
     }
 
   }

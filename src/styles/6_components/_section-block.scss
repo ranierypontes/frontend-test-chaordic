@@ -7,20 +7,17 @@
   background-color: $white;
 
   > .title {
-    font-weight: bold;
-    font-size: $fontsize-large;
+    font-family: $robotoSlab;
     color: $primary;
+    font-size: $size-2;
+    text-align: center;
   }
 
-  > .title.-white {
-    color: $white;
-  }
-
-  > .paragraph {
+  > .subtitle {
     margin-top: 10px;
     text-align: center;
     color: $white;
-    font-size: $fontsize-small2;
+    font-size: $size-5;
   }
 
   // Variants
@@ -30,6 +27,12 @@
     @extend .bg-cover;
     background-image: url('../../images/background-home.jpg');
     background-color: $primary;
+
+    > .title {
+      font-family: $robotoSlabBold;
+      color: $white;
+      font-size: $size-1;
+    }
   }
 
   &.-top5 {
@@ -43,6 +46,19 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $third;
+  }
+
+}
+
+// MEDIA QUERIES
+@include media("PHONES", max) {
+
+  .section-block {
+
+    > .subtitle > .break {
+      display: none;
+    }
+
   }
 
 }
