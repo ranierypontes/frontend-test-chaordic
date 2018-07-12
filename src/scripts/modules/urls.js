@@ -18,7 +18,9 @@ class UrlsJson {
         listLinks.className = 'list-links';
         section.appendChild(listLinks);
 
-        response.data.forEach((item) => {
+        for (let index = 0; index < 5; index++) {
+          const data = response.data[index];
+
           // Create ListItems
           const listItem = document.createElement('LI');
           listItem.className = 'item';
@@ -26,19 +28,19 @@ class UrlsJson {
 
           // Create Links
           const link = document.createElement('A');
-          link.innerHTML = item.shortUrl;
+          link.innerHTML = data.shortUrl;
           link.className = 'link';
-          link.setAttribute('href', item.url);
-          link.setAttribute('title', item.url);
+          link.setAttribute('href', data.url);
+          link.setAttribute('title', data.url);
           link.setAttribute('target', '_blank');
           listItem.appendChild(link);
 
           // Create Hits
           const hits = document.createElement('SPAN');
-          hits.innerHTML = item.hits;
+          hits.innerHTML = data.hits;
           hits.className = 'hits';
           listItem.appendChild(hits);
-        });
+        }
 
         // Remove loading spinner
         const spinner = document.querySelector('.section-block.-top5>.loading');

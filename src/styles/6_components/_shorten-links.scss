@@ -27,6 +27,11 @@
     outline: none;
   }
 
+  > .inputbox > .input.-short {
+    animation: anim2 0.5s 0.5s linear;
+    color: $white;
+  }
+
   > .inputbox > .icon {
     display: none;
     cursor: pointer;
@@ -45,6 +50,26 @@
     background-color: #FF6A00;
     font-weight: bold;
     font-size: $size-6;
+  }
+
+  > .btn.-short {
+    animation: anim2 0.5s linear;
+  }
+
+  @keyframes anim {
+    to {
+      color: transparent;
+    }
+  }
+
+  @keyframes anim2 {
+    50% {
+      color: transparent;
+    }
+
+    100% {
+      color: $white;
+    }
   }
 
 }

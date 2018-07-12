@@ -1,9 +1,8 @@
 import Common from './modules/common';
-import Mask from './modules/mask';
 import UrlsJson from './modules/urls';
 import Shortener from './modules/shortener';
 
-const availableModules = { Common, Mask, UrlsJson, Shortener };
+const availableModules = { Common, UrlsJson, Shortener };
 
 window.modules = {};
 

@@ -1,6 +1,7 @@
 // FOOTER BLOCK
 
 .footer-block {
+  position: relative;
   color: $lightblack;
   background-color: $white;
   @include container-custom();
@@ -16,14 +17,96 @@
   > .social > .twitter {
     margin-right: 20px;
   }
+
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -5%;
+    margin-left: -10%;
+    width: 60.55%;
+    height: 55px;
+    // z-index: ;
+    content: '';
+    transform: rotate(7deg);
+    background-color: $third;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -5%;
+    margin-right: -10%;
+    width: 60.55%;
+    height: 55px;
+    // z-index: ;
+    content: '';
+    transform: rotate(-7deg);
+    background-color: $third;
+  }
+
 }
 
 // MEDIA QUERIES
+@include media_only("TABLETS") {
+  .footer-block {
+
+    &::before {
+      width: 60.70%;
+      height: 45px;
+    }
+
+    &::after {
+      width: 60.70%;
+      height: 45px;
+    }
+
+  }
+}
+
+@include media_only("LARGE_PHONES") {
+  .footer-block {
+
+    &::before {
+      width: 60.90%;
+      height: 35px;
+      background-color: $third;
+      transform: rotate(9deg);
+    }
+
+    &::after {
+      width: 60.90%;
+      height: 35px;
+      background-color: $third;
+      transform: rotate(-9deg);
+    }
+
+  }
+}
+
 @include media("PHONES", max) {
   .footer-block {
 
     > .social > .twitter {
       margin-right: 10px;
+    }
+
+    &::before {
+      margin-top: -5.2%;
+      width: 61.10%;
+      height: 32px;
+      background-color: $third;
+      transform: rotate(10deg);
+    }
+
+    &::after {
+      margin-top: -5.2%;
+      width: 61.10%;
+      height: 32px;
+      background-color: $third;
+      transform: rotate(-10deg);
     }
 
   }
