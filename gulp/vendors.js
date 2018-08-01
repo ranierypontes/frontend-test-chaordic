@@ -4,7 +4,7 @@ import gulp from 'gulp';
 gulp.task('vendors', () => {
     return gulp.src([
         // Jquery
-        // `${cons.vendor}/jquery/dist/jquery.js`,
+        `${cons.vendor}/jquery/dist/jquery.js`,
 
         // Bootstrap
         // `${cons.vendor}/bootstrap-sass/assets/javascripts/bootstrap/transition.js`,
